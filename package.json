@@ -4,7 +4,7 @@
   "private": true,
   "repository": "https://github.com/rancher/ui",
   "license": "Apache-2.0",
-  "author": "Rancher Labs, Inc.",
+  "author": "Axiata Digital Labs",
   "directories": {
     "doc": "doc",
     "test": "tests"

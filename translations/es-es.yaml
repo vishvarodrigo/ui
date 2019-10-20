@@ -176,7 +176,7 @@ accountsPage:
   modal:
     password: Cambio de contraseña
 appDetailPage:
-  header: "App: {appName}"
+  header: "App: AKE"
   endpoints:
     title: Endpoints
     detail: 'Endpoints públicos de esta aplicación'
@@ -352,8 +352,8 @@ authPage:
         labelText: Campo UID
         display: "Campo UID:"
       rancherApiHost:
-        labelText: "{appName} API Host"
-        display: "{appName} API Host:"
+        labelText: "AKE API Host"
+        display: "AKE API Host:"
       groups:
         labelText: Campo de grupos
         display: "Campo de grupos:"
@@ -385,7 +385,7 @@ authPage:
           text: Autenticación
       disableAccess:
         header: "Zona peligrosa&trade;"
-        warning: '<b class="text-danger"> PRECAUCIÓN:</b> Deshabilitar control de acceso le dará control total sobre {appName} a cualquier persona que pueda acceder a esta página o la API.'
+        warning: '<b class="text-danger"> PRECAUCIÓN:</b> Deshabilitar control de acceso le dará control total sobre AKE a cualquier persona que pueda acceder a esta página o la API.'
         disable: Deshabilitar control de acceso
       groupsField: 'Grupos:'
       displayName: 'Nombre a mostrar:'
@@ -427,7 +427,7 @@ authPage:
           helpText: "Para cambiar la aplicación de GitHub configurada, se debe deshabilitar el control de acceso que está debajo y luego configúrarlo nuevamente."
       disableAccess:
         header: "Zona peligrosa&trade;"
-        warning: '<b class="text-danger">Cuidado:</b> Deshabilitar el control de acceso sobre {appName} otorgará control completo a todo aquel que pueda ver esta página o la API.'
+        warning: '<b class="text-danger">Cuidado:</b> Deshabilitar el control de acceso sobre AKE otorgará control completo a todo aquel que pueda ver esta página o la API.'
         disable: Desactivar el acceso de Github
     notAuthenticated:
       header: "1. Configurar una aplicación de GitHub"
@@ -439,14 +439,14 @@ authPage:
         li2:
           text: 'Haz click en "Registrar nueva aplicación" y completa el formulario:'
           ul:
-            li1: '<b>Nombre de la aplicación:</b><span class="text-muted">Lo que tu desees, ej. Mi {appName}</span>'
+            li1: '<b>Nombre de la aplicación:</b><span class="text-muted">Lo que tu desees, ej. Mi AKE</span>'
             li2: 'URL de la página de inicio'
             li3: '<b>Descripción de la aplicación:</b> <span class="text-muted"> Cualquier cosa que desee, opcional</span>'
             li4: 'URL de devolución de llamada de autorización'
         li3:
           text: 'Haga clic en "Registrar aplicación"'
       form:
-        header: '2. Configura {appName} para utilizar tu aplicación para autenticación'
+        header: '2. Configura AKE para utilizar tu aplicación para autenticación'
         subtext: 'Copia y pega el ID de Cliente y Secreto de la esquina superior derecha de la aplicación que acabas de crear.'
         clientId:
           labelText: ID de cliente
@@ -478,7 +478,7 @@ authPage:
         header: General
     configure:
       header: '1. Configurar cuenta Azure AD'
-      replyUrl: "Azure AD requiere una URL incluida en la lista blanca para su servidor {appName} antes de comenzar esta configuración. Asegúrese de que la siguiente URL esté configurada en la sección URL de respuesta de su Portal de Azure. Tenga en cuenta que puede demorar hasta 5 minutos para que se propague la URL incluida en la lista blanca."
+      replyUrl: "Azure AD requiere una URL incluida en la lista blanca para su servidor AKE antes de comenzar esta configuración. Asegúrese de que la siguiente URL esté configurada en la sección URL de respuesta de su Portal de Azure. Tenga en cuenta que puede demorar hasta 5 minutos para que se propague la URL incluida en la lista blanca."
       help: Ingrese la identificación del inquilino, la identificación del cliente y los detalles del usuario administrador para conectarse a su cuenta de autenticación de Azure AD.
       applicationId:
         label: ID de aplicación
@@ -523,18 +523,18 @@ authPage:
       disabled: 'La Autenticación Local no está configurada'
     subtext:
       enabled:
-        text: '{appName} está configurado para permitir acceso a cuentas en su base de datos local.'
+        text: 'AKE está configurado para permitir acceso a cuentas en su base de datos local.'
         alwaysOn: 'La Autenticación Local siempre está habilitada, pero usted puede seleccionar otro esquema de autenticación a utilizar además de la locale.'
         linkText: Administrar cuentas
-      disabled: '{appName} puede ser configurado para restringir el acceso a ciertos usuarios en la base de datos de {appName}. Actualmente esto no está configurado, por lo tanto cualquiera que vea esta página (o la API) tiene control completo sobre el sistema.'
+      disabled: 'AKE puede ser configurado para restringir el acceso a ciertos usuarios en la base de datos de AKE. Actualmente esto no está configurado, por lo tanto cualquiera que vea esta página (o la API) tiene control completo sobre el sistema.'
     accessEnabled:
       header: 'Zona peligrosa&trade;'
-      warning: '<b class="text-danger">Cuidado:</b> Deshabilitar el control de acceso sobre {appName} otorgará control completo a todo aquel que pueda ver esta página o la API.'
+      warning: '<b class="text-danger">Cuidado:</b> Deshabilitar el control de acceso sobre AKE otorgará control completo a todo aquel que pueda ver esta página o la API.'
       buttonText:
         prompt: Desactivar control de acceso
     accessDisabled:
       header: '1. Configurar el usuario administrador'
-      helpText: 'Este usuario será el administrador que tendrá control total sobre {appName}.'
+      helpText: 'Este usuario será el administrador que tendrá control total sobre AKE.'
       form:
         login:
           labelText: Nombre de usuario de inicio de sesión
@@ -659,7 +659,7 @@ namespacesPage:
 clusterPage:
   edit: Editar Clúster
   removeMemberNote: 'Nota: Al eliminar al usuario no se eliminarán los permisos de su proyecto'
-  internal: '<b>Precaución:</b> Este es el clúster que {appName} está utilizando como almacén de datos. Solo a los administradores se les debe dar acceso de escritura a este clúster.<br>Los usuarios con acceso de escritura a este clúster pueden usarlo para otorgarse acceso a cualquier otro clúster administrado por esta instalación.'
+  internal: '<b>Precaución:</b> Este es el clúster que AKE está utilizando como almacén de datos. Solo a los administradores se les debe dar acceso de escritura a este clúster.<br>Los usuarios con acceso de escritura a este clúster pueden usarlo para otorgarse acceso a cualquier otro clúster administrado por esta instalación.'
 projectsListNamespacePage:
   header: Namespaces
   notIn: No en un proyecto
@@ -787,7 +787,7 @@ containersPage:
     orchestrator: Instalar otro orquestador
     kubernetesLink: Instalar Kubernetes
 clusterDashboard:
-  systemProject: Este es el proyecto de sistema que tiene todos Kubernetes y {appName} sistema espacios de nombres. Cambios realizados a los recursos en el proyecto de sistema pueden dañar el cluster.
+  systemProject: Este es el proyecto de sistema que tiene todos Kubernetes y AKE sistema espacios de nombres. Cambios realizados a los recursos en el proyecto de sistema pueden dañar el cluster.
   notActive: Este clúster está <b>{state}</b>.
   notReady: Este clúster está <b>{state}</b>; las áreas que interactúan directamente con él no estarán disponibles hasta que la API está lista.
 dnsPage:
@@ -907,7 +907,7 @@ time:
 haPage:
   header: Alta disponibilidad
   setup:
-    prefix: "Pueden ser desplegados múltiples contenedores de servidor, por lo tanto {appName} puede correr incluso si uno de los hosts falla.  "
+    prefix: "Pueden ser desplegados múltiples contenedores de servidor, por lo tanto AKE puede correr incluso si uno de los hosts falla.  "
     link: Consulte la documentación
     suffix: " para obtener información sobre instalación y uso."
   table:
@@ -1059,10 +1059,10 @@ k8sPage:
       downloadText: |
         Luego <a href="{downloadUrl}" target="_blank">descarga</a> (si es necesario) y ejecuta <code>kubectl</code>
 loginPage:
-  greeting: "¡Hola!<br><span>Bienvenido a {appName}</span>"
-  insecure: "{appName} solo funciona en una conexión de <code>https: //</code>. Debe:<br><br>Usar el soporte TLS integrado en el servidor, o <br><br> Proporcionar su propia terminación TLS frente al contenedor."
-  githubMessage: "{appName} utiliza GitHub para gestionar cuentas y equipos. Haz click en el botón que está debajo para ingresar y darnos acceso de solo lectura a la información básica de tu cuenta de GitHub."
-  shibbolethMessage: "{appName} utiliza Shibboleth para administrar cuentas. Haz click en el botón que está debajo para ingresar a la IDP de Shibboleth configurada."
+  greeting: "¡Hola!<br><span>Bienvenido a AKE</span>"
+  insecure: "AKE solo funciona en una conexión de <code>https: //</code>. Debe:<br><br>Usar el soporte TLS integrado en el servidor, o <br><br> Proporcionar su propia terminación TLS frente al contenedor."
+  githubMessage: "AKE utiliza GitHub para gestionar cuentas y equipos. Haz click en el botón que está debajo para ingresar y darnos acceso de solo lectura a la información básica de tu cuenta de GitHub."
+  shibbolethMessage: "AKE utiliza Shibboleth para administrar cuentas. Haz click en el botón que está debajo para ingresar a la IDP de Shibboleth configurada."
   shibbolethError:
     401: "No autorizado"
     500: "Error del Servidor"
@@ -1211,14 +1211,14 @@ servicePage:
     header: Carga de trabajo y Sidecars
     helpBlock: Seleccione el contenedor principal o uno de los sidecares
 signupPage:
-  header: 'Registrarse para {appName}'
+  header: 'Registrarse para AKE'
   form:
     button: Registrar
     labels:
       loginUsername: Nombre
       email: Correo electrónico
   emailSuccess:
-    header: 'Bienvenido/a a {appName}'
+    header: 'Bienvenido/a a AKE'
     confirm:
       subtext: Confirma tu email haciendo click en el link de verificación que acabamos de enviarte a tu bandeja de entrada.
       resend: Reenviar correo electrónico
@@ -1285,7 +1285,7 @@ newStack:
     uploadActionLabel: Leer desde el disco
     namePlaceholder: Nombre de Archivo
     valuePlaceholder: Contenido del Archivo
-    protipLabel: Soporta {appName} <code>componer.yml</code>, <code>ventana acoplable-componer.yml</code>, y Kubernetes archivos de manifiesto
+    protipLabel: Soporta AKE <code>componer.yml</code>, <code>ventana acoplable-componer.yml</code>, y Kubernetes archivos de manifiesto
   answers:
     label: Respuestas (sustitución de variables)
     addActionLabel: Añadir Respuesta
@@ -1446,7 +1446,7 @@ ldap:
   accessConfig:
     header: "1. Configurar un servidor de {providerName}"
     subtext1: "Ingresa la dirección, puerto y protocolo para conectar con tu servidor {providerName}. El puerto estándar para conexiones inseguras es <code>389</code>, <code>636</code> para conexiones TLS."
-    subtext2: "{appName} necesita una cuenta de servicio que tenga acceso de solo lectura a todos los dominios que sean capaces de ingresar, por lo tanto podremos determinar a que grupos un usuario es miembro al momento de realizar una solicitud con una llave de API."
+    subtext2: "AKE necesita una cuenta de servicio que tenga acceso de solo lectura a todos los dominios que sean capaces de ingresar, por lo tanto podremos determinar a que grupos un usuario es miembro al momento de realizar una solicitud con una llave de API."
     port:
       labelText: Puerto
       checkbox: TLS
@@ -1643,7 +1643,7 @@ catalogSettings:
   helpText: Actualmente, solo los catálogos de Helm son compatibles
   library:
     label: Librería
-    detail: Repositorio oficial de plantillas de aplicaciones seleccionadas por {appName}.
+    detail: Repositorio oficial de plantillas de aplicaciones seleccionadas por AKE.
   helm:
     stable:
       label: Helm estable
@@ -1653,7 +1653,7 @@ catalogSettings:
       detail: Plantillas adicionales de aplicaciones Helm de calidad beta que aún no están listas para ser promovidas a Estable.
   certified:
     header:
-      rancher: "Biblioteca Certificada por {appName}"
+      rancher: "Biblioteca Certificada por AKE"
       pl: Biblioteca Certificada
     detail:
       rancher: Plantillas requeridas por funcionalidades del núcleo de Rancher tales como el soporte de los orquestadores Kubernetes/Mesos/Swarm. Mantenidas y respaldadas por Rancher Labs.
@@ -1671,7 +1671,7 @@ catalogSettings:
       header: "Puede definir sus propias fuentes de catálogo personalizado adicionales. Cada catálogo personalizado necesita lo siguiente:"
       help-name: '<strong>Nombre único</strong>'
       help-repo: '<strong>URL del repositorio:</strong>'
-      help-git: "GIT catálogo basado en la URL, por ejemplo, <em class='text-lowercase'>https://github.com/{appName}/gráficos.git</em>"
+      help-git: "GIT catálogo basado en la URL, por ejemplo, <em class='text-lowercase'>https://github.com/AKE/gráficos.git</em>"
       help-chart: 'URL del servidor de Helm Charts, <em>p. Ej. Https://kubernetes-charts.storage.googleapis.com/ (ver <a href="https://docs.helm.sh/developing_charts/#hosting-chart-repositories" target="_blank" rel="nofollow noopener noreferrer">Hosting Chart Repositories</a> para obtener más información)</em>'
     addActionLabel: Añadir Catálogo
     noMatch: No hay catálogos que coincida con la búsqueda actual.
@@ -1939,7 +1939,7 @@ clusterNew:
       private:
         label: Dirección Interna
         placeholder: ej. 1.2.3.4
-    label: '{appName} Motor de Kubernetes'
+    label: 'AKE Motor de Kubernetes'
     shortLabel: Personalizado
     customize:
       label: Opciones del Clúster
@@ -2063,8 +2063,8 @@ clusterNew:
     label: Importar
     shortLabel: Importar
     command:
-      instructions: "Ejecute el siguiente comando kubectl en un clúster de Kubernetes existente que ejecute una versión compatible de Kubernetes para importarlo a {appName}:"
-      instructionsInsecure: "Si recibe un error sobre 'certificado firmado por una autoridad desconocida' porque su instalación {appName} está ejecutando con un certificado SSL no confiable / autofirmado, ejecute el siguiente comando para evitar la verificación del certificado:"
+      instructions: "Ejecute el siguiente comando kubectl en un clúster de Kubernetes existente que ejecute una versión compatible de Kubernetes para importarlo a AKE:"
+      instructionsInsecure: "Si recibe un error sobre 'certificado firmado por una autoridad desconocida' porque su instalación AKE está ejecutando con un certificado SSL no confiable / autofirmado, ejecute el siguiente comando para evitar la verificación del certificado:"
 conditionSections:
   title: Estado
   detail: Estado actual de las {resourceType}
@@ -2088,7 +2088,7 @@ resourceEventList:
   noMatch: No hay eventos de coincidencia con la búsqueda actual
 confirmDelete:
   titleWithoutResourceType: '¿Está seguro que desea eliminar'
-  environmentNote: 'Nota: Todos los recursos dentro de este Proyecto se eliminará de forma permanente, incluyendo cualquier espacio de nombres que fueron creados a través de {appName}.'
+  environmentNote: 'Nota: Todos los recursos dentro de este Proyecto se eliminará de forma permanente, incluyendo cualquier espacio de nombres que fueron creados a través de AKE.'
   clusterNote: 'Nota: Los recursos asociados como volúmenes, equilibradores y redes que se crearon en el proveedor de la nube no se eliminarán automáticamente.'
   clusterRoleTemplateBindingNote: "Nota: los permisos de proyecto no será eliminado."
   systemProjectNamespaceNote: 'Está eliminando los espacios de nombres en el proyecto del sistema. Podría causar los efectos nocivos al clúster si se elimina.'
@@ -2787,7 +2787,7 @@ cruStorageClass:
       placeholder: "ej. replicar: 3"
 dangerZone:
   header: Configuración avanzada
-  subtext: "Los usuarios típicos no necesitarán cambiar esto. Proceda con precaución, los valores incorrectos pueden interrumpir su instalación {appName}<br/>ajustes que se han personalizado a partir de la configuración predeterminada se muestran en <b>negrita</b>."
+  subtext: "Los usuarios típicos no necesitarán cambiar esto. Proceda con precaución, los valores incorrectos pueden interrumpir su instalación AKE<br/>ajustes que se han personalizado a partir de la configuración predeterminada se muestran en <b>negrita</b>."
   showLabel: Comprendo que puedo romper cosas al cambiar la configuración avanzada.
   description:
     'cacerts': "Certificados de CA necesarios para verificar el certificado del servidor"
@@ -2797,7 +2797,7 @@ dangerZone:
     'engine-newest-version': 'La última versión compatible de Docker en el momento de este lanzamiento. Una versión de Docker que no cumple con el rango de docker admitido pero es más nueva que esta se marcará como no probada'
     'engine-supported-range': 'Rango de Semver para las versiones soportadas del motor Docker. Las versiones que no satisfacen este rango se marcarán como no compatibles en la interfaz de usuario'
     'ingress-ip-domain': 'Dominio DNS comodín para usar para nombres de host de Ingress generados automáticamente. <ingress-name>.<namespace-name>.<ip address of ingress controller> serán agregados al dominio.'
-    'server-url': 'Por defecto {appName} dirección url de instalación. Debe ser HTTPS. Todos los nodos en el clúster debe ser capaz de llegar a este.'
+    'server-url': 'Por defecto AKE dirección url de instalación. Debe ser HTTPS. Todos los nodos en el clúster debe ser capaz de llegar a este.'
     'system-default-registry': 'Registro privado que se utilizará para todas las imágenes Docker del sistema'
     'ui-index': 'Ubicación del índice HTML para la interfaz de usuario.'
     'ui-pl': 'Nombre de la compañía de etiqueta privada'
@@ -2967,9 +2967,9 @@ formatIp:
   noIp: Ninguna
 formBalancerConfig:
   title: Archivo de configuración personalizada
-  detail: Proporciona tu archivo de configuración personaliada para que sea aplicada sobre la configuración generada por {appName}
+  detail: Proporciona tu archivo de configuración personaliada para que sea aplicada sobre la configuración generada por AKE
   custom: |
-    Consulte <a href="https://cbonte.github.io/haproxy-dconv/1.6/configuration.html" target="_blank" rel="nofollow noopener noreferrer">documentación de haproxy</a> para obtener más información sobre las opciones específicas que pueden entrar en el archivo de configuración. Al anular el <code>backend</code> o líneas similares que incluyen la dirección IP del contenedor de destino, use <code>$IP</code> donde va la dirección y {appName} generará la (s) línea (s) apropiada (s).
+    Consulte <a href="https://cbonte.github.io/haproxy-dconv/1.6/configuration.html" target="_blank" rel="nofollow noopener noreferrer">documentación de haproxy</a> para obtener más información sobre las opciones específicas que pueden entrar en el archivo de configuración. Al anular el <code>backend</code> o líneas similares que incluyen la dirección IP del contenedor de destino, use <code>$IP</code> donde va la dirección y AKE generará la (s) línea (s) apropiada (s).
   config:
     prompt: Contenido de haproxy.cfg personalizado
 formNodeAffinity:
@@ -3257,7 +3257,7 @@ formEnvVar:
     value: Valor
 formGlobalRoles:
   title: Permisos globales
-  description: Controla lo que el usuario tiene acceso para administrar el conjunto {appName} instalación.
+  description: Controla lo que el usuario tiene acceso para administrar el conjunto AKE instalación.
   mode:
     admin:
       label: Administrador
@@ -4022,7 +4022,7 @@ formBasicPodSecurityPolicy:
     disable: "No"
 hostSettings:
   header: URL para Registración de Hosts
-  subtext: '¿Qué URL de base deben utilizar los hosts para conectarse a la API de {appName}?'
+  subtext: '¿Qué URL de base deben utilizar los hosts para conectarse a la API de AKE?'
   hostUrl:
     local: "La dirección de este sitio:"
     new:
@@ -4030,7 +4030,7 @@ hostSettings:
       placeholder: "ej. http://ejemplo.com:8080"
   helpText:
     static1: "No incluir <code>/v1</code> ni ninguna otra ruta, pero si estás haciendo"
-    static2: "al frente de {appName}, asegurate de utilizar <code>https://</code>."
+    static2: "al frente de AKE, asegurate de utilizar <code>https://</code>."
     isRancher: '<a href="{docsBase}/installing-rancher/installing-server/basic-ssl-config/" target="_blank">Terminación SSL</a>'
     sslTerm: Terminación SSL
   notPublic:
@@ -4255,7 +4255,7 @@ modalEditSetting:
     label: Restablecer a valores predeterminados
 modalEditPassword:
   firstLogin:
-    title: Bienvenido a {appName}
+    title: Bienvenido a AKE
     help: La primera orden del día es establecer una contraseña segura para el usuario predeterminado <code>admin</code>.
     actionButton: Continuar
   edit:
@@ -4270,7 +4270,7 @@ modalEditPassword:
     generate: 'Use una nueva contraseña generada al azar:'
     manual: 'Establezca una contraseña específica para usar:'
 modalFeedback:
-  header: '¡Bienvenido a {appName}!'
+  header: '¡Bienvenido a AKE!'
   subtitle: "Antes de comenzar, por favor cuéntanos un poco sobre ti..."
   send: Comenzar
 modalHostEvacuate:
@@ -4317,7 +4317,7 @@ modalRollbackService:
   difference:
     label: Diferencias
 modalRollbackApp:
-  title: 'Restaurar "{appName}"'
+  title: 'Restaurar "AKE"'
   action: Restaurar
   current:
     label: Revisión actual
@@ -4351,7 +4351,7 @@ modalYaml:
     edit: 'Editar YAML: {name}'
     view: 'Ver YAML: {name}'
 modalWelcome:
-  header: '¡Bienvenido a {appName}!'
+  header: '¡Bienvenido a AKE!'
   closeModal: Entendido
 namespaceGroup:
   label: "Namespace: {name}"
@@ -4490,7 +4490,7 @@ nodeDriver:
     vmwarevsphere: vSphere
     zstack: ZStack
   driverOptions: "Opciones de {driver}"
-  templateOptions: "{appName} plantilla"
+  templateOptions: "AKE plantilla"
   amazoneks:
     access:
       next: "Siguiente: Seleccionar función de servicio"
@@ -4572,8 +4572,8 @@ nodeDriver:
       link: Aprende más
       text: sobre los puertos que se abrirán.
     needs:
-      label: "Para {appName} para que funcione correctamente su grupo de seguridad se necesitan para permitir el tráfico:"
-      item1: Desde el servidor {appName} al puerto <code>22</code> <code>TCP</code> <span class="text-muted">(Para instalar y configurar Docker vía SSH)</span>
+      label: "Para AKE para que funcione correctamente su grupo de seguridad se necesitan para permitir el tráfico:"
+      item1: Desde el servidor AKE al puerto <code>22</code> <code>TCP</code> <span class="text-muted">(Para instalar y configurar Docker vía SSH)</span>
       item2: Desde y Hasta otros hosts en puerto <code>500</code> <code>UDP</code> y <code>4500</code><span class="text-muted">(para red IPsec)</span></li>
       item3: Estas reglas <b>no</b> son añadidas automáticamente.
     instanceType:
@@ -4666,8 +4666,8 @@ nodeDriver:
       link: Saber más
       text: sobre los puertos que se abrirán.
     needs:
-      label: "Para que {appName} funcione correctamente tu grupo de seguridad debe permitir tráfico:"
-      item1: Desde el servidor {appName} al puerto <code>22</code> <code>TCP</code> <span class="text-muted">(Para instalar y configurar Docker vía SSH)</span>
+      label: "Para que AKE funcione correctamente tu grupo de seguridad debe permitir tráfico:"
+      item1: Desde el servidor AKE al puerto <code>22</code> <code>TCP</code> <span class="text-muted">(Para instalar y configurar Docker vía SSH)</span>
       item2: Desde y Hasta otros hosts en puerto <code>500</code> <code>UDP</code> y <code>4500</code><span class="text-muted">(para red IPsec)</span></li>
       item3: Estas reglas <b>no</b> son añadidas automáticamente.
     selectSecurityGroupAction: "Siguiente: Establecer opciones de instancia"
@@ -4967,7 +4967,7 @@ nodeDriver:
       sshPasswordLengthNotValid: La longitud de la contraseña de SSH debe ser entre ocho y treinta.
       sshPasswordInvalidCharacter: La contraseña contiene caracteres inválidos.
       sshPasswordFormatError: "La contraseña de SSH debe contener al menos tres de cuatro tipos de caracteres siguientes: mayúsculas, minúsculas, números y caracteres especiales."
-      nameNotValidForApp: El nombre no es válido según la regla del nombre de host {appName}.
+      nameNotValidForApp: El nombre no es válido según la regla del nombre de host AKE.
   zstack:
     access:
       title: 1. Acceso a la cuenta
@@ -5249,12 +5249,12 @@ schedulingRuleRow:
 serverUrl:
   header:
     label: Url del servidor de rancher
-    detail: "¿Qué URL debería usarse para esta {appName} instalación? Todos los nodos en sus clusters necesitarán poder alcanzar esto."
+    detail: "¿Qué URL debería usarse para esta AKE instalación? Todos los nodos en sus clusters necesitarán poder alcanzar esto."
   button:
     save: Guardar URL
 siteAccess:
   header: Acceso al Sitio
-  helpText: "Configura quien debería poder ingresar y utilizar {appName}."
+  helpText: "Configura quien debería poder ingresar y utilizar AKE."
   unrestricted: "Permitir cualquier {individuals} válido"
   restricted: "Permitir miembros del entorno, más {individuals} y {collection} autorizados"
   required: "Restringir el acceso únicamente a {individuals} y {collection} autorizados"
@@ -5284,7 +5284,7 @@ tableCountSelect:
 telemetryOpt:
   header: Estadísticas
   subtext: |
-    A Rancher Labs le gustaría recolectar información anónima sobre la configuración de tu instalación para ayudar a mejorar {appName}.<br/>Tus datos no serán compartidos con nadie más, y ningún nombre de recurso o direcciones especificas serán recolectadas.
+    A Rancher Labs le gustaría recolectar información anónima sobre la configuración de tu instalación para ayudar a mejorar AKE.<br/>Tus datos no serán compartidos con nadie más, y ningún nombre de recurso o direcciones especificas serán recolectadas.
   learnMore:
     label: Saber más
   label: Permitir la recolección de estadísticas anónimas

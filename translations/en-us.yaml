@@ -229,7 +229,7 @@ accountsPage:
     password: Change Password
 
 appDetailPage:
-  header: "App: {appName}"
+  header: "App: AKE"
   endpoints:
     title: Endpoints
     detail: 'Public Endpoints of this application'
@@ -602,7 +602,7 @@ authPage:
       clientSecret:
         labelText: Secret
   bitbucketserver:
-    warning: Bitbucket server webhooks need to do SSL verification, please ensure that {appName} server’s certificate is trusted by the bitbucket server. More info can be found <a href="https://rancher.com/docs/rancher/v2.x/en/tools/pipelines/configurations/#1-configuring-version-control-providers" target="_blank" rel="nofollow noopener noreferrer">here</a>.
+    warning: Bitbucket server webhooks need to do SSL verification, please ensure that AKE server’s certificate is trusted by the bitbucket server. More info can be found <a href="https://rancher.com/docs/rancher/v2.x/en/tools/pipelines/configurations/#1-configuring-version-control-providers" target="_blank" rel="nofollow noopener noreferrer">here</a>.
     copy: Click the icon to copy it
     target:
       header: '1. Choose the Bitbucket type you want to use'
@@ -659,8 +659,8 @@ authPage:
         labelText: UID Field
         display: "UID Field:"
       rancherApiHost:
-        labelText: "{appName} API Host"
-        display: "{appName} API Host:"
+        labelText: "AKE API Host"
+        display: "AKE API Host:"
       groups:
         labelText: Groups Field
         display: "Groups Field:"
@@ -699,7 +699,7 @@ authPage:
           text: Authentication
       disableAccess:
         header: "Danger Zone&trade;"
-        warning: '<b class="text-danger">Caution:</b> Disabling access control will give complete control over {appName} to anyone that can reach this page or the API.'
+        warning: '<b class="text-danger">Caution:</b> Disabling access control will give complete control over AKE to anyone that can reach this page or the API.'
         confirmDisable: "Are you sure?  Click again to disable access control"
         disable: Disable access control
       groupsField: 'Groups:'
@@ -760,7 +760,7 @@ authPage:
           helpText: "To change the configured GitHub application, disable access control below and then set it up again."
       disableAccess:
         header: "Danger Zone&trade;"
-        warning: '<b class="text-danger">Caution:</b> Disabling access control will give complete control over {appName} to anyone that can reach this page or the API.'
+        warning: '<b class="text-danger">Caution:</b> Disabling access control will give complete control over AKE to anyone that can reach this page or the API.'
         confirmDisable: "Are you sure?  Click again to disable access control"
         disable: Disable Github access
     notAuthenticated:
@@ -773,7 +773,7 @@ authPage:
         li2:
           text: 'Click "Register a new application" and fill out the form:'
           ul:
-            li1: '<b>Application name:</b> <span class="text-muted">Anything you like, e.g. My {appName}</span>'
+            li1: '<b>Application name:</b> <span class="text-muted">Anything you like, e.g. My AKE</span>'
             li2: 'Homepage URL:'
             li3: '<b>
 
@@ -782,7 +782,7 @@ authPage:
         li3:
           text: 'Click "Register application"'
       form:
-        header: '2. Configure {appName} to use your application for authentication'
+        header: '2. Configure AKE to use your application for authentication'
         subtext: 'Copy and paste the Client ID and Client Secret of your newly created application.'
         clientId:
           labelText: Client ID
@@ -814,7 +814,7 @@ authPage:
           text: "Admin Email: "
       disableAccess:
         header: "Danger Zone&trade;"
-        warning: '<b class="text-danger">Caution:</b> Disabling access control will give complete control over {appName} to anyone that can reach this page or the API.'
+        warning: '<b class="text-danger">Caution:</b> Disabling access control will give complete control over AKE to anyone that can reach this page or the API.'
         confirmDisable: "Are you sure?  Click again to disable access control"
         disable: Disable Google access
     notAuthenticated:
@@ -887,7 +887,7 @@ authPage:
         header: General
     configure:
       header: 'Configure Azure AD Account'
-      replyUrl: "Azure AD requires a whitelisted URL for your {appName} server before beginning this setup. Please ensure that the following URL is set in the Reply URL section of your Azure Portal. Please note that is may take up to 5 minutes for the whitelisted URL to propagate."
+      replyUrl: "Azure AD requires a whitelisted URL for your AKE server before beginning this setup. Please ensure that the following URL is set in the Reply URL section of your Azure Portal. Please note that is may take up to 5 minutes for the whitelisted URL to propagate."
       help: Enter the Tenant ID, Client ID, and Admin user details to connect to your Azure AD auth account.
       applicationId:
         label: Application ID
@@ -932,19 +932,19 @@ authPage:
       disabled: 'Local Authentication is not configured'
     subtext:
       enabled:
-        text: '{appName} is configured to allow access to accounts in its local database.'
+        text: 'AKE is configured to allow access to accounts in its local database.'
         alwaysOn: 'Local Authentication will always be enabled but you may select another authentication scheme to use in addition to local.'
         linkText: Manage Accounts
-      disabled: '{appName} can be configured to restrict access to a set of accounts defined in the {appName} database.  This is not currently set up, so anybody that reach this page (or the API) has full control over the system.'
+      disabled: 'AKE can be configured to restrict access to a set of accounts defined in the AKE database.  This is not currently set up, so anybody that reach this page (or the API) has full control over the system.'
     accessEnabled:
       header: 'Danger Zone&trade;'
-      warning: '<b class="text-danger">Caution:</b> Disabling access control will give complete control over {appName} to anyone that can reach this page or the API.'
+      warning: '<b class="text-danger">Caution:</b> Disabling access control will give complete control over AKE to anyone that can reach this page or the API.'
       buttonText:
         disable: 'Are you sure?  Click again to disable access control'
         prompt: Disable access control
     accessDisabled:
       header: '1. Setup an Admin user'
-      helpText: 'This user will become the admin that has full control over {appName}.'
+      helpText: 'This user will become the admin that has full control over AKE.'
       form:
         login:
           labelText: Login Username
@@ -1209,7 +1209,7 @@ clusterPage:
   edit: Edit Cluster
   annotationsDetail: Configure labels and annotations for the cluster.
   removeMemberNote: 'Note: Removing User will not remove their project permissions'
-  internal: '<b>Caution:</b> This is the cluster that {appName} is using as a data store.  Only administrators should be given write access to this cluster.<br>Users with write access to this cluster can use it to grant themselves access to any other cluster managed by this installation.'
+  internal: '<b>Caution:</b> This is the cluster that AKE is using as a data store.  Only administrators should be given write access to this cluster.<br>Users with write access to this cluster can use it to grant themselves access to any other cluster managed by this installation.'
 
 projectsListNamespacePage:
   header: Namespaces
@@ -1386,7 +1386,7 @@ containersPage:
     kubernetesLink: Install Kubernetes
 
 clusterDashboard:
-  systemProject: This is the system project which has all Kubernetes and {appName} system namespaces. Changes made to resources in the system project may harm the cluster.
+  systemProject: This is the system project which has all Kubernetes and AKE system namespaces. Changes made to resources in the system project may harm the cluster.
   notActive: This cluster is currently <b>{state}</b>.
   notReady: This cluster is currently <b>{state}</b>; areas that interact directly with it will not be available until the API is ready.
   used: Used
@@ -1395,9 +1395,9 @@ clusterDashboard:
     cluster: Cluster Metrics
     etcd: Etcd Metrics
     k8s: Kubernetes Components Metrics
-    rancher: '{appName} Logging Metrics'
+    rancher: 'AKE Logging Metrics'
     node: Node Metrics
-  noRancherComponents: '{appName} Logging is not enabled in this cluster or not enough data for graph.'
+  noRancherComponents: 'AKE Logging is not enabled in this cluster or not enough data for graph.'
   cpu: CPU
   memory: Memory
   pods: Pods
@@ -2187,7 +2187,7 @@ time:
 haPage:
   header: High Availability
   setup:
-    prefix: "Multiple server containers can be deployed on different hosts so that {appName} keeps running even if one of the hosts fail.  "
+    prefix: "Multiple server containers can be deployed on different hosts so that AKE keeps running even if one of the hosts fail.  "
     link: See documentation
     suffix: " for information on setup and usage."
   table:
@@ -2367,10 +2367,10 @@ k8sPage:
         Then <a href="{downloadUrl}" target="_blank">download</a> (if needed) and run <code>kubectl</code>
 
 loginPage:
-  greeting: "Howdy!<br><span>Welcome to {appName}</span>"
-  insecure: "{appName} only works over a <code>https://</code> connection.  You must either:<br><br>Use the TLS support built-in to the server, or <br><br> Provide your own TLS termination in front of the container."
-  githubMessage: "{appName} uses GitHub to manage accounts and teams.  Click the button below to log in and give us read-only access to your basic GitHub account information."
-  shibbolethMessage: "{appName} uses Shibboleth to manage accounts.  Click the button below to log in to the configured Shibboleth IDP."
+  greeting: "Team!<br><span>Welcome to AKE</span>"
+  insecure: "AKE only works over a <code>https://</code> connection.  You must either:<br><br>Use the TLS support built-in to the server, or <br><br> Provide your own TLS termination in front of the container."
+  githubMessage: "AKE uses GitHub to manage accounts and teams.  Click the button below to log in and give us read-only access to your basic GitHub account information."
+  shibbolethMessage: "AKE uses Shibboleth to manage accounts.  Click the button below to log in to the configured Shibboleth IDP."
   shibbolethError:
     401: "Unauthorized"
     500: "Internal Server Error"
@@ -2441,7 +2441,7 @@ rulesPage:
   noMatch: No traffic rule match the current search
   noData: There are no traffic rules to show
 ruleDetailPage:
-  header: "Traffic Rules: {appName}"
+  header: "Traffic Rules: AKE"
   rules:
     virtualservices: Virtual Services
     serviceentries: Service Entries
@@ -2558,14 +2558,14 @@ servicePage:
     helpBlock: Select the main container or one of the sidecars
 
 signupPage:
-  header: 'Signup for {appName}'
+  header: 'Signup for AKE'
   form:
     button: Register
     labels:
       loginUsername: Name
       email: Email
   emailSuccess:
-    header: 'Welcome to {appName}'
+    header: 'Welcome to AKE'
     confirm:
       subtext: Confirm your email by clicking the verification link we just sent to your inbox.
       resend: Resend Email
@@ -2634,7 +2634,7 @@ newStack:
     uploadActionLabel: Read from Disk
     namePlaceholder: File Name
     valuePlaceholder: File Contents
-    protipLabel: Supports {appName} <code>compose.yml</code>, <code>docker-compose.yml</code>, and Kubernetes manifest files
+    protipLabel: Supports AKE <code>compose.yml</code>, <code>docker-compose.yml</code>, and Kubernetes manifest files
   answers:
     label: Answers (variable substitutions)
     addActionLabel: Add Answer
@@ -2859,7 +2859,7 @@ ldap:
   accessConfig:
     header: "1. Configure an {providerName} server"
     subtext1: "Enter the address, port, and protocol to connect to your {providerName} server.  <code>389</code> is the standard port for insecure, <code>636</code> for TLS."
-    subtext2: "{appName} needs a service account that has (read-only) access to all of the domains that will be able to login, so that we can determine what groups a user is a member of when they make a request with an API key."
+    subtext2: "AKE needs a service account that has (read-only) access to all of the domains that will be able to login, so that we can determine what groups a user is a member of when they make a request with an API key."
     port:
       labelText: Port
       checkbox: TLS
@@ -3089,7 +3089,7 @@ catalogSettings:
   globalCatalog: Global
   library:
     label: Library
-    detail: Official repository of curated application templates maintained by {appName}.
+    detail: Official repository of curated application templates maintained by AKE.
   helm:
     stable:
       label: Helm Stable
@@ -3099,7 +3099,7 @@ catalogSettings:
       detail: Additional beta-quality Helm application templates which are not ready to be promoted to Stable yet.
   certified:
     header:
-      rancher: "{appName} Certified Library"
+      rancher: "AKE Certified Library"
       pl: Certified Library
     detail:
       rancher: Templates required for core features such as Kubernetes orchestration support.  Maintained and supported by Rancher Labs.
@@ -3117,7 +3117,7 @@ catalogSettings:
       header: "You can define your own additional custom catalog sources. Each custom catalog needs the following:"
       help-name: '<strong>Unique name</strong>'
       help-repo: '<strong>Repository URL:</strong>'
-      help-git: "Git-based catalog URL, <em class='text-lowercase'>e.g. https://github.com/{appName}/charts.git</em>"
+      help-git: "Git-based catalog URL, <em class='text-lowercase'>e.g. https://github.com/AKE/charts.git</em>"
       help-chart: 'Helm Charts server URL, <em>e.g. https://kubernetes-charts.storage.googleapis.com/ (see <a href="https://docs.helm.sh/developing_charts/#hosting-chart-repositories" target="_blank" rel="nofollow noopener noreferrer">Hosting Chart Repositories</a> for specifics)</em>'
     addActionLabel: Add Catalog
     noMatch: No catalogs match the current search.
@@ -3946,7 +3946,7 @@ clusterNew:
       private:
         label: Internal Address
         placeholder: e.g. 1.2.3.4
-    label: '{appName} Kubernetes Engine'
+    label: 'AKE Kubernetes Engine'
     shortLabel: Custom
     customize:
       label: Cluster Options
@@ -4100,8 +4100,8 @@ clusterNew:
     helpBlock: Import an existing Kubernetes cluster.  The provider that created it will continue to manage the provisioning and configuration of the cluster.
     command:
       instructionsAdminRole: "<b>Note:</b> If you want to import a Google Kubernetes Engine (GKE) cluster (or any cluster that does not supply you with a kubectl configuration file with the ClusterRole <b>cluster-admin</b> bound to it), you need to bind the ClusterRole <b>cluster-admin</b> using the command below.<br/><br/>Replace <b>[USER_ACCOUNT]</b> with your Google account address (you can retrieve this using <b>gcloud config get-value account</b>). If you are not importing a Google Kubernetes Engine cluster, replace <b>[USER_ACCOUNT]</b> with the executing user configured in your kubectl configuration file."
-      instructions: "Run the kubectl command below on an existing Kubernetes cluster running a supported Kubernetes version to import it into {appName}:"
-      instructionsInsecure: "If you get an error about 'certificate signed by unknown authority' because your {appName} installation is running with an untrusted/self-signed SSL certificate, run the command below instead to bypass the certificate check:"
+      instructions: "Run the kubectl command below on an existing Kubernetes cluster running a supported Kubernetes version to import it into AKE:"
+      instructionsInsecure: "If you get an error about 'certificate signed by unknown authority' because your AKE installation is running with an untrusted/self-signed SSL certificate, run the command below instead to bypass the certificate check:"
 
 clusterTemplateNew:
   members:
@@ -4349,7 +4349,7 @@ confirmDelete:
     namespace: 'namespace'
     project: 'project'
     cluster: 'cluster'
-  environmentNote: 'Note: All resources inside this Project will be permanently removed, including any namespaces that were created through {appName}.'
+  environmentNote: 'Note: All resources inside this Project will be permanently removed, including any namespaces that were created through AKE.'
   clusterNote: 'Note: Associated resources such as volumes, balancers, and networks that were created in the cloud provider will not be automatically removed.'
   clusterRoleTemplateBindingNote: "Note: User's project permissions will not be removed."
   systemProjectNamespaceNote: 'You are removing the namespaces under system project. It might cause the harmful effects to the cluster if it is removed.'
@@ -5247,7 +5247,7 @@ validationsList:
 
 dangerZone:
   header: Advanced Settings
-  subtext: "Typical users will not need to change these.  Proceed with caution, incorrect values can break your {appName} installation.<br/>Settings which have been customized from default settings  are shown in <b>bold</b>."
+  subtext: "Typical users will not need to change these.  Proceed with caution, incorrect values can break your AKE installation.<br/>Settings which have been customized from default settings  are shown in <b>bold</b>."
   showLabel: I understand that I can break things by changing advanced settings.
   show: Show
   hide: Hide
@@ -5259,7 +5259,7 @@ dangerZone:
     'engine-newest-version': 'The newest supported version of Docker at the time of this release.  A Docker version that does not satisfy supported docker range but is newer than this will be marked as untested.'
     'engine-supported-range': 'Semver range for supported Docker engine versions.  Versions which do not satisfy this range will be marked unsupported in the UI.'
     'ingress-ip-domain': 'Wildcard DNS domain to use for automatically generated Ingress hostnames. <ingress-name>.<namespace-name>.<ip address of ingress controller> will be added to the domain.'
-    'server-url': 'Default {appName} install url. Must be HTTPS. All nodes in your cluster must be able to reach this.'
+    'server-url': 'Default AKE install url. Must be HTTPS. All nodes in your cluster must be able to reach this.'
     'system-default-registry': 'Private registry to be used for all system Docker images.'
     'ui-index': 'HTML index location for the UI.'
     'ui-pl': 'Private-Label company name.'
@@ -5497,9 +5497,9 @@ formatIp:
 
 formBalancerConfig:
   title: Custom Config File
-  detail: Provide your own custom configuration file to be applied on top of the config generated by {appName}
+  detail: Provide your own custom configuration file to be applied on top of the config generated by AKE
   custom: |
-    See <a href="https://cbonte.github.io/haproxy-dconv/1.6/configuration.html" target="_blank" rel="nofollow noopener noreferrer">haproxy documentation</a> for more info about specific options that can go into the the config file.  When overriding the <code>backend</code> or similar lines which include the IP address of the target container, use <code>$IP</code> where the address goes and {appName} will generate the appropriate line(s).
+    See <a href="https://cbonte.github.io/haproxy-dconv/1.6/configuration.html" target="_blank" rel="nofollow noopener noreferrer">haproxy documentation</a> for more info about specific options that can go into the the config file.  When overriding the <code>backend</code> or similar lines which include the IP address of the target container, use <code>$IP</code> where the address goes and AKE will generate the appropriate line(s).
   config:
     prompt: Custom haproxy.cfg content
 
@@ -5822,7 +5822,7 @@ formEnvVar:
 
 formGlobalRoles:
   title: Global Permissions
-  description: Controls what access the user has to administer the overall {appName} installation.
+  description: Controls what access the user has to administer the overall AKE installation.
   mode:
     admin:
       label: Administrator
@@ -6143,7 +6143,7 @@ formPorts:
   header: Port Mapping
   addAction: Add Port
   hostPortWarning: 'Host Port is not supported on Windows nodes. See Windows support <a href="https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/#limitations" target="_blank">limitations</a> in Kubernetes for more info.'
-  warning: This workload is not created by {appName} UI or {appName} API. {appName} will not automatically create related services for port mapping.
+  warning: This workload is not created by AKE UI or AKE API. AKE will not automatically create related services for port mapping.
   kind:
     label: As a
     NodePort: NodePort (On every node)
@@ -6786,7 +6786,7 @@ formReservation:
 
 hostSettings:
   header: Host Registration URL
-  subtext: What base URL should hosts use to connect to the {appName} API?
+  subtext: What base URL should hosts use to connect to the AKE API?
   hostUrl:
     local: "This site's address:"
     new:
@@ -6794,7 +6794,7 @@ hostSettings:
       placeholder: "e.g. http://example.com:8080"
   helpText:
     static1: "Don't include <code>/v1</code> or any other path, but if you are doing"
-    static2: "in front of {appName}, be sure to use <code>https://</code>."
+    static2: "in front of AKE, be sure to use <code>https://</code>."
     isRancher: '<a href="{docsBase}/installing-rancher/installing-server/basic-ssl-config/" target="_blank">SSL termination</a>'
     sslTerm: SSL termination
   notPublic:
@@ -7370,7 +7370,7 @@ modalEditSetting:
 
 modalEditPassword:
   firstLogin:
-    title: Welcome to {appName}
+    title: Welcome to AKE
     help: The first order of business is to set a strong password for the default <code>admin</code> user.
     actionButton: Continue
   edit:
@@ -7387,7 +7387,7 @@ modalEditPassword:
   deleteTokens: Delete all existing API keys
 
 modalFeedback:
-  header: Welcome to {appName}!
+  header: Welcome to AKE!
   subtitle: "Before you get started, please tell us a little about yourself..."
   send: Get Started
 
@@ -7484,7 +7484,7 @@ modalRollbackService:
     label: Differences
 
 modalRollbackApp:
-  title: 'Rollback "{appName}"'
+  title: 'Rollback "AKE"'
   action: Rollback
   current:
     label: Current Revision
@@ -7524,7 +7524,7 @@ modalYaml:
   noData: There is no {name} resources.
 
 modalWelcome:
-  header: Welcome to {appName}!
+  header: Welcome to AKE!
   closeModal: Got It
 
 namespaceGroup:
@@ -7850,7 +7850,7 @@ nodeDriver:
     pinganyunecs: Pinganyun ECS
     baidu: Baidu CCE
   driverOptions: "{driver} Options"
-  templateOptions: "{appName} Template"
+  templateOptions: "AKE Template"
   amazoneks:
     access:
       next: "Next: Configure Cluster"
@@ -7976,8 +7976,8 @@ nodeDriver:
       link: Learn more
       text: about the ports that will be opened.
     needs:
-      label: "For {appName} to work correctly your security group will need to allow traffic:"
-      item1: From the {appName} server to <code>TCP</code> port <code>22</code> <span class="text-muted">(SSH to install and configure Docker)</span>
+      label: "For AKE to work correctly your security group will need to allow traffic:"
+      item1: From the AKE server to <code>TCP</code> port <code>22</code> <span class="text-muted">(SSH to install and configure Docker)</span>
       item2: From and To all other hosts on <code>UDP</code> ports <code>500</code> and <code>4500</code> <span class="text-muted">(for IPsec networking)</span></li>
       item3: These rules will <b>not</b> be added automatically.
     instanceType:
@@ -8074,8 +8074,8 @@ nodeDriver:
       link: Learn more
       text: about the ports that will be opened.
     needs:
-      label: "For {appName} to work correctly your security group will need to allow traffic:"
-      item1: From the {appName} server to <code>TCP</code> port <code>22</code> <span class="text-muted">(SSH to install and configure Docker)</span>
+      label: "For AKE to work correctly your security group will need to allow traffic:"
+      item1: From the AKE server to <code>TCP</code> port <code>22</code> <span class="text-muted">(SSH to install and configure Docker)</span>
       item2: From and To all other hosts on <code>UDP</code> ports <code>500</code> and <code>4500</code> <span class="text-muted">(for IPsec networking)</span></li>
       item3: These rules will <b>not</b> be added automatically.
     selectSecurityGroupAction: "Next: Set Instance options"
@@ -8418,7 +8418,7 @@ nodeDriver:
       sshPasswordLengthNotValid: The length of SSH password must between eight and thirty.
       sshPasswordInvalidCharacter: SSH password contains invalid characters.
       sshPasswordFormatError: "SSH password must contain at least three out of four kinds of following characters: uppercase letter, lowercase letters, numbers, and special characters."
-      nameNotValidForApp: The name is invalid according to the {appName} hostname rule.
+      nameNotValidForApp: The name is invalid according to the AKE hostname rule.
   zstack:
     access:
       title: 1. Account Access
@@ -8767,13 +8767,13 @@ schedulingRuleRow:
 serverUrl:
   header:
     label: Rancher Server URL
-    detail: "What URL should be used for this {appName} installation? All the nodes in your clusters will need to be able to reach this."
+    detail: "What URL should be used for this AKE installation? All the nodes in your clusters will need to be able to reach this."
   button:
     save: Save URL
 
 siteAccess:
   header: Site Access
-  helpText: "Configure who should be allowed to log in and use {appName}."
+  helpText: "Configure who should be allowed to log in and use AKE."
   unrestricted: "Allow any valid {individuals}"
   restricted: "Allow members of Clusters, Projects, plus Authorized {individuals} and {collection}"
   required: "Restrict access to only Authorized {individuals} and {collection}"
@@ -8809,7 +8809,7 @@ tableCountSelect:
 telemetryOpt:
   header: Statistics
   subtext: |
-    Rancher Labs would like to collect anonymous information about the configuration of your installation to help make {appName} better.<br/>Your data will not be shared with anyone else, and no specific resource names or addresses are collected.
+    Rancher Labs would like to collect anonymous information about the configuration of your installation to help make AKE better.<br/>Your data will not be shared with anyone else, and no specific resource names or addresses are collected.
   learnMore:
     label: Learn More
   label: Allow collection of anonymous statistics
@@ -9396,7 +9396,7 @@ units:
 windowsCluster:
   logging:
     vxlanWarning: |
-      {appName} Logging doesn't work with VxLan mode currently due to <a href="https://github.com/kubernetes/kubernetes/issues/79359" target="_blank">kubernetes/kubernetes#79359</a>. We are working with Microsoft to fix it in Kubernetes side.
+      AKE Logging doesn't work with VxLan mode currently due to <a href="https://github.com/kubernetes/kubernetes/issues/79359" target="_blank">kubernetes/kubernetes#79359</a>. We are working with Microsoft to fix it in Kubernetes side.
     kafka:
       brokerTypeHelpText: Use the Broker list as the Kafka connection entry point.
     helpText: We will use fluentd to collect stdout/stderr logs from each container and the log files which exist under path <code >/var/log/containers/</code> on each <b>Linux</b> host and <code >c:/var/log/containers/</code> on each <b>Windows</b> host. The logs can be shipped to a target you configure below.

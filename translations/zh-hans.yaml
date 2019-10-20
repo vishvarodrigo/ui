@@ -229,7 +229,7 @@ accountsPage:
     password: 修改密码
 
 appDetailPage:
-  header: "App: {appName}"
+  header: "App: AKE"
   endpoints:
     title: 端点
     detail: '此应用的公共端点'
@@ -594,7 +594,7 @@ authPage:
           helpText: '要修改设置的GitHub应用，请在下方禁用访问控制后重新设置'
       disableAccess:
         header: "危险区域&trade;"
-        warning: '<b class="text-danger">警告: </b>禁用访问控制将导致任何能够访问此页面或API的用户拥有对{appName}的完全控制权限。'
+        warning: '<b class="text-danger">警告: </b>禁用访问控制将导致任何能够访问此页面或API的用户拥有对AKE的完全控制权限。'
         confirmDisable: "确认关闭吗? 再次点击将关闭访问控制"
         disable: 禁用Github访问
     notAuthenticated:
@@ -607,14 +607,14 @@ authPage:
         li2:
           text: '点击 "Register new application" 并填写表单内容: '
           ul:
-            li1: '<b>应用名称: </b><span class="text-muted">应用名称，例如: My {appName}</span>'
+            li1: '<b>应用名称: </b><span class="text-muted">应用名称，例如: My AKE</span>'
             li2: '应用首页URL: '
             li3: '<b>应用描述: </b><span class="text-muted">应用描述，可选</span>'
             li4: '授权回调URL: '
         li3:
           text: '点击 "注册应用程序" '
       form:
-        header: '2. 配置{appName}以使用GitHub进行身份验证'
+        header: '2. 配置AKE以使用GitHub进行身份验证'
         subtext: '将新创建的GitHub应用Client ID和Secret复制粘贴到下方的对应输入框中'
         clientId:
           labelText: 客户端 ID
@@ -677,7 +677,7 @@ authPage:
       clientSecret:
         labelText: Secret
   bitbucketserver:
-    warning: Bitbucket Server Webhook需要SSL验证，请确保{appName}服务器的证书在Bitbucket Server中是可信的。点击<a href="https://rancher.com/docs/rancher/v2.x/en/tools/pipelines/configurations/#1-configuring-version-control-providers" target="_blank" rel="nofollow noopener noreferrer">这里</a>获取更多信息。
+    warning: Bitbucket Server Webhook需要SSL验证，请确保AKE服务器的证书在Bitbucket Server中是可信的。点击<a href="https://rancher.com/docs/rancher/v2.x/en/tools/pipelines/configurations/#1-configuring-version-control-providers" target="_blank" rel="nofollow noopener noreferrer">这里</a>获取更多信息。
     copy: 点击复制
     target:
       header: '1. 选择你要使用的Bitbucket类型'
@@ -734,8 +734,8 @@ authPage:
         labelText: UID
         display: "UID: "
       rancherApiHost:
-        labelText: "{appName} API地址"
-        display: "{appName} API地址: "
+        labelText: "AKE API地址"
+        display: "AKE API地址: "
       groups:
         labelText: 组
         display: "组: "
@@ -774,7 +774,7 @@ authPage:
           text: 认证
       disableAccess:
         header: '危险区域&trade;'
-        warning: '<b class="text-danger">警告:</b>禁用访问控制将导致任何能够访问此页面或API的用户拥有对{appName}的完全控制权限。'
+        warning: '<b class="text-danger">警告:</b>禁用访问控制将导致任何能够访问此页面或API的用户拥有对AKE的完全控制权限。'
         confirmDisable: '确认关闭吗? 再次点击将关闭访问控制'
         disable: 关闭访问控制
       groupsField: '组: '
@@ -813,7 +813,7 @@ authPage:
           text: "管理员邮箱: "
       disableAccess:
         header: "危险警告"
-        warning: '<b class="text-danger">Caution: </b>禁用访问控制将为所有能够访问此页面或API的人提供对{appName}的完全控制。'
+        warning: '<b class="text-danger">Caution: </b>禁用访问控制将为所有能够访问此页面或API的人提供对AKE的完全控制。'
         confirmDisable: "确定关闭吗?再次单击将关闭访问控制。"
         disable: 禁用谷歌访问
     notAuthenticated:
@@ -886,7 +886,7 @@ authPage:
         header: 常规
     configure:
       header: '配置Azure AD帐户'
-      replyUrl: "在开始设置之前，需要在Azure AD为{appName}设置一个白名单URL。请确保Azure门户的Reply URL部分设置了以下Reply URL。 请注意，白名单URL设置后可能需要5分钟生效时间。"
+      replyUrl: "在开始设置之前，需要在Azure AD为AKE设置一个白名单URL。请确保Azure门户的Reply URL部分设置了以下Reply URL。 请注意，白名单URL设置后可能需要5分钟生效时间。"
       help: '输入租户ID、Client ID和管理用户详细信息，以连接到Azure AD验证帐户信息。'
       applicationId:
         label: 应用 ID
@@ -931,19 +931,19 @@ authPage:
       disabled: '本地验证未配置'
     subtext:
       enabled:
-        text: '{appName}已设置本地账户访问'
+        text: 'AKE已设置本地账户访问'
         alwaysOn: '本地身份验证将始终启用，您可以在本地认证基础之上添加其他认证方案'
         linkText: 管理账号
-      disabled: '{appName}能够被设置为仅允许{appName}本地数据库中配置的用户访问。当前系统未进行设置，因此任何可以访问此页面(或API)的用户都具有系统的完全控制权限。'
+      disabled: 'AKE能够被设置为仅允许AKE本地数据库中配置的用户访问。当前系统未进行设置，因此任何可以访问此页面(或API)的用户都具有系统的完全控制权限。'
     accessEnabled:
       header: '危险区域&trade;'
-      warning: '<b class="text-danger">警告: </b>禁用访问控制将导致所有能够访问此页面或API的用户拥有对{appName}的完全控制权限。'
+      warning: '<b class="text-danger">警告: </b>禁用访问控制将导致所有能够访问此页面或API的用户拥有对AKE的完全控制权限。'
       buttonText:
         disable: '确认关闭吗? 再次点击将关闭访问控制。'
         prompt: 关闭访问控制
     accessDisabled:
       header: '1. 设置管理员用户'
-      helpText: '该账户将成为管理员并拥有对{appName}的完全控制权限。'
+      helpText: '该账户将成为管理员并拥有对AKE的完全控制权限。'
       form:
         login:
           labelText: 登录用户名
@@ -1105,7 +1105,7 @@ clusterPage:
   edit: 编辑集群
   annotationsDetail: 为集群配置标签和注释。
   removeMemberNote: '注意: 删除成员不会删除其项目权限。'
-  internal: '<b>警告:</b>{appName}集群用作数据存储，只应授予管理员拥有写入权限.<br>对此集群具有写入权限的用户，可以使用它授予自己安装并管理的其他集群的访问权限。'
+  internal: '<b>警告:</b>AKE集群用作数据存储，只应授予管理员拥有写入权限.<br>对此集群具有写入权限的用户，可以使用它授予自己安装并管理的其他集群的访问权限。'
 
 projectsListNamespacePage:
   header: 命名空间列表
@@ -1913,7 +1913,7 @@ time:
 haPage:
   header: 高可用性(HA)
   setup:
-    prefix: "可以在不同主机上部署多个服务器容器，以便{appName}一直保持运行，即使其中一个主机失败。"
+    prefix: "可以在不同主机上部署多个服务器容器，以便AKE一直保持运行，即使其中一个主机失败。"
     link: 请参阅文档
     suffix: ' 有关安装和使用信息'
   table:
@@ -2071,10 +2071,10 @@ k8sPage:
         然后<a href="https://www.cnrancher.com/docs/rancher/v2.x/cn/install-prepare/download/kubernetes/" target="_blank"><code>下载kubectl</code></a>(如有需要)并运行。
 
 loginPage:
-  greeting: "您好！<br>欢迎使用{appName}"
-  insecure: "{appName}仅支持<code>https://</code>连接，您必须:<br><br>使用服务器内置的TLS支持<br><br>，或者在容器前面提供自己的TLS终止服务。"
-  githubMessage: "{appName}使用GitHub管理账号和团队。点击以下按钮以登录，我们将仅使用基本的GitHub账号信息。"
-  shibbolethMessage: "{appName}使用Shibboleth管理账号。点击以下按钮以登录到设置的Shibboleth IDP。"
+  greeting: "您好！<br>欢迎使用AKE"
+  insecure: "AKE仅支持<code>https://</code>连接，您必须:<br><br>使用服务器内置的TLS支持<br><br>，或者在容器前面提供自己的TLS终止服务。"
+  githubMessage: "AKE使用GitHub管理账号和团队。点击以下按钮以登录，我们将仅使用基本的GitHub账号信息。"
+  shibbolethMessage: "AKE使用Shibboleth管理账号。点击以下按钮以登录到设置的Shibboleth IDP。"
   shibbolethError:
     401: "未授权"
     500: "内部服务器错误"
@@ -2239,14 +2239,14 @@ servicePage:
     helpBlock: 选择主容器或其中一个sidecar容器
 
 signupPage:
-  header: '注册{appName}'
+  header: '注册AKE'
   form:
     button: 注册
     labels:
       loginUsername: 姓名
       email: 电子邮箱
   emailSuccess:
-    header: '欢迎使用{appName}'
+    header: '欢迎使用AKE'
     confirm:
       subtext: 已经发送邮件到邮箱，请点击邮件中的验证链接以确认邮件地址。
       resend: 重新发送邮件
@@ -2315,7 +2315,7 @@ newStack:
     uploadActionLabel: 从磁盘读取
     namePlaceholder: 文件名
     valuePlaceholder: 文件内容
-    protipLabel: "支持{appName}<code>compose.yml</code>，<code>docker-compose.yml</code>和Kubernetes清单文件。"
+    protipLabel: "支持AKE<code>compose.yml</code>，<code>docker-compose.yml</code>和Kubernetes清单文件。"
   answers:
     label: 应答(变量替换)
     addActionLabel: 添加应答
@@ -2532,7 +2532,7 @@ ldap:
   accessConfig:
     header: "1. 配置{providerName}服务器"
     subtext1: "请输入地址、端口及协议以连接{providerName}服务器。<code>389</code>是标准端口(未加密)，<code>636</code>是加密连接(TLS)端口。"
-    subtext2: "{appName}需要对所有登录域有只读权限的服务账号。"
+    subtext2: "AKE需要对所有登录域有只读权限的服务账号。"
     port:
       labelText: 端口
       checkbox: TLS
@@ -2762,7 +2762,7 @@ catalogSettings:
   globalCatalog: 全局
   library:
     label: 官方认证
-    detail: 由{appName}官方维护的模板仓库。
+    detail: 由AKE官方维护的模板仓库。
   helm:
     stable:
       label: Helm Stable
@@ -2772,7 +2772,7 @@ catalogSettings:
       detail: 未经测试验证的应用模板仓库。
   certified:
     header:
-      rancher: "{appName}认证库"
+      rancher: "AKE认证库"
       pl: 认证的库
     detail:
       rancher: 'Rancher核心功能所依赖的模板，例如: Kubernetes/Mesos/Swarm编排支持，由Rancher官方维护并提供支持。'
@@ -2790,7 +2790,7 @@ catalogSettings:
       header: "您可以自定义应用商店，每个自定义商店需满足以下要求: "
       help-name: 唯一的名称
       help-repo: '仓库地址: '
-      help-git: "基于Git的商店地址，例如: https://github.com/{appName}/charts.git。"
+      help-git: "基于Git的商店地址，例如: https://github.com/AKE/charts.git。"
       help-chart: 'Helm Charts server URL，例如: https://kubernetes-charts.storage.googleapis.com/，详细信息可查看<a href="https://docs.helm.sh/developing_charts/#hosting-chart-repositories" target="_blank" rel="nofollow noopener noreferrer">Chart托管仓库</a>。'
     addActionLabel: 添加应用商店
     noMatch: 没有与当前搜索匹配的应用商店
@@ -3611,7 +3611,7 @@ clusterNew:
       private:
         label: 内网地址
         placeholder: '例如: 1.2.3.4'
-    label: '{appName}Kubernetes引擎'
+    label: 'AKEKubernetes引擎'
     shortLabel: 自定义
     customize:
       label: 集群选项
@@ -3765,8 +3765,8 @@ clusterNew:
     helpBlock: 导入现有的Kubernetes集群。Kubernetes集群的管理和配置继续由原提供商负责。
     command:
       instructionsAdminRole: "<b>注意: </b> 如果想要导入Google Kubernetes Engine(GKE)集群（或一些不提供绑定集群管理角色<b>cluster-admin</b>的kubectl配置文件的集群）, 需要通过以下命令来绑定集群管理角色<b>cluster-admin</b>。 用您的谷歌帐户地址替换<b>[USER_ACCOUNT]</b>（您可以使用<b>gcloud config get-value account</b>检索这个地址）。如果您不是导入谷歌Kubernetes集群，那么用kubectl配置文件中配置的执行用户替换<b>[USER_ACCOUNT]</b>。"
-      instructions: "在现有的受支持的Kubernetes集群上运行下面的kubectl命令，将其导入{appName}: "
-      instructionsInsecure: "如果由于您的{appName}安装使用不受信任/自签名的SSL证书而出现“由未知权限签名的证书”错误，请运行下面的命令以绕过证书检查: "
+      instructions: "在现有的受支持的Kubernetes集群上运行下面的kubectl命令，将其导入AKE: "
+      instructionsInsecure: "如果由于您的AKE安装使用不受信任/自签名的SSL证书而出现“由未知权限签名的证书”错误，请运行下面的命令以绕过证书检查: "
 
 clusterTemplateNew:
   members:
@@ -3870,7 +3870,7 @@ confirmDelete:
     namespace: '命名空间'
     project: '项目'
     cluster: '集群'
-  environmentNote: '注意: 该项目中的所有资源都将被永久删除，包括通过{appName}创建的所有命名空间。'
+  environmentNote: '注意: 该项目中的所有资源都将被永久删除，包括通过AKE创建的所有命名空间。'
   clusterNote: '注意: 通过云提供商驱动创建的相关资源(如卷、负载均衡器和网络)不会自动删除。'
   clusterRoleTemplateBindingNote: '注意: 不会删除用户的项目权限。'
   systemProjectNamespaceNote: '注意: 您正在删除系统项目下的命名空间。如果将其移除，可能会导致集群不能正常运行。'
@@ -4608,8 +4608,8 @@ cruStorageClass:
 
 dangerZone:
   header: 高级设置
-  subtext: "通常情况下用户不需要修改以下设置。请谨慎操作，不正确的值可能导致{appName}无法正常运行。修改默认设置后将以<b>粗体</b>显示配置名。"
-  showLabel: 我已确认修改高级设置可能导致{appName}出问题。
+  subtext: "通常情况下用户不需要修改以下设置。请谨慎操作，不正确的值可能导致AKE无法正常运行。修改默认设置后将以<b>粗体</b>显示配置名。"
+  showLabel: 我已确认修改高级设置可能导致AKE出问题。
   show: 显示
   hide: 隐藏
   description:
@@ -4620,7 +4620,7 @@ dangerZone:
     'engine-newest-version': '当前Rancher Server支持的最新Docker版本，不支持的版本或比此Docker版本新的将被标记为未测试。'
     'engine-supported-range': '当前Rancher Server支持的Docker版本范围，不满足此范围的Docker版本将在UI中标记为不受支持。'
     'ingress-ip-domain': '用于自动生成Ingress主机名的通配域名。<入口名>.<命名空间名>.<入口控制器的IP地址>将被添加到域名中。'
-    'server-url': '默认的{appName} Server访问地址，必须是HTTPS。集群中的所有主机都必须能够访问此地址。'
+    'server-url': '默认的AKE Server访问地址，必须是HTTPS。集群中的所有主机都必须能够访问此地址。'
     'system-default-registry': '用于RKE部署系统服务时镜像的拉取，其他服务拉取镜像不生效。'
     'ui-index': 'UI HTML索引位置。'
     'ui-pl': '企业名称专用标签'
@@ -4858,9 +4858,9 @@ formatIp:
 
 formBalancerConfig:
   title: 自定义配置文件
-  detail: 提供自定义配置文件，这个配置将会被应用到{appName}自动生产的配置上方。
+  detail: 提供自定义配置文件，这个配置将会被应用到AKE自动生产的配置上方。
   custom: |
-    请参考<a href="https://cbonte.github.io/haproxy-dconv/1.6/configuration.html" target="_blank" rel="nofollow noopener noreferrer">haproxy文档</a>了解更多关于该配置文件的参数。当重写<code>backend</code>或包括目标容器IP的某行时，请使用<code>$IP</code>来代替IP地址，{appName}将会自动转换成相应的配置。
+    请参考<a href="https://cbonte.github.io/haproxy-dconv/1.6/configuration.html" target="_blank" rel="nofollow noopener noreferrer">haproxy文档</a>了解更多关于该配置文件的参数。当重写<code>backend</code>或包括目标容器IP的某行时，请使用<code>$IP</code>来代替IP地址，AKE将会自动转换成相应的配置。
   config:
     prompt: 自定义haproxy.cfg内容
 
@@ -5183,7 +5183,7 @@ formEnvVar:
 
 formGlobalRoles:
   title: 全局角色
-  description: 控制用户管理整个{appName}安装的访问权限。
+  description: 控制用户管理整个AKE安装的访问权限。
   mode:
     admin:
       label: 管理员
@@ -5502,7 +5502,7 @@ formPorts:
   header: 端口映射
   addAction: 添加规则
   hostPortWarning: 'Host Port模式不支持Windows节点。了解更多关于Windows在Kubernetes中的<a href="https://kubernetes.io/docs/setup/production-environment/windows/intro-windows-in-kubernetes/#limitations" target="_blank">支持限制</a>。'
-  warning: "这个工作负载不是由{appName}或{appName} API创建的，{appName}不会自动为端口映射创建相关服务。"
+  warning: "这个工作负载不是由AKE或AKE API创建的，AKE不会自动为端口映射创建相关服务。"
   kind:
     label: 网络模式
     NodePort: NodePort(所有主机端口均可访问)
@@ -6145,7 +6145,7 @@ formReservation:
 
 hostSettings:
   header: 主机注册URL
-  subtext: 主机连接{appName} API的Base URL是？
+  subtext: 主机连接AKE API的Base URL是？
   hostUrl:
     local: "当前站点地址:"
     new:
@@ -6153,7 +6153,7 @@ hostSettings:
       placeholder: '例如: http://example.com:8080'
   helpText:
     static1: "不要包含<code>/v1</code>或任何其他路径，但如果您设置了"
-    static2: "在{appName}前面，请确保使用<code>https://</code>."
+    static2: "在AKE前面，请确保使用<code>https://</code>."
     isRancher: '<a href="{docsBase}/installing-rancher/installing-server/basic-ssl-config/" target="_blank">SSL终止</a>'
     sslTerm: SSL终止
   notPublic:
@@ -6730,7 +6730,7 @@ modalEditSetting:
 
 modalEditPassword:
   firstLogin:
-    title: "欢迎使用{appName}"
+    title: "欢迎使用AKE"
     help: '第一步: 请为默认<code>admin</code>用户设置强密码'
     actionButton: 继续
   edit:
@@ -6747,7 +6747,7 @@ modalEditPassword:
   deleteTokens: 删除所有现有的API键
 
 modalFeedback:
-  header: "欢迎使用{appName}!"
+  header: "欢迎使用AKE!"
   subtitle: "在开始使用前，请让我们了解关于您的信息..."
   send: 开始使用
 
@@ -6844,7 +6844,7 @@ modalRollbackService:
     label: 区别
 
 modalRollbackApp:
-  title: '回滚 "{appName}"'
+  title: '回滚 "AKE"'
   action: 回滚
   current:
     label: 当前版本
@@ -6886,7 +6886,7 @@ modalWechat:
   title: '扫码关注Rancher中国微信技术群'
   wechat: 微信
 modalWelcome:
-  header: "欢迎使用{appName}!"
+  header: "欢迎使用AKE!"
   closeModal: 确认
 
 namespaceGroup:
@@ -7214,7 +7214,7 @@ nodeDriver:
     pinganyunecs: Pinganyun ECS
     baidu: Baidu CCE
   driverOptions: "{driver}选项"
-  templateOptions: "{appName}模板"
+  templateOptions: "AKE模板"
   amazoneks:
     access:
       next: "下一步: 配置集群"
@@ -7340,8 +7340,8 @@ nodeDriver:
       link: 了解更多
       text: 将要开放端口的详细信息
     needs:
-      label: "为了使{appName}正常使用，安全组需要配置允许以下流量通过: "
-      item1: '从{appName} 服务器到主机的<code>TCP</code>端口<code>22</code><span class="text-muted">(SSH连接用于安装docker)。'
+      label: "为了使AKE正常使用，安全组需要配置允许以下流量通过: "
+      item1: '从AKE 服务器到主机的<code>TCP</code>端口<code>22</code><span class="text-muted">(SSH连接用于安装docker)。'
       item2: '主机之间需要开放<code>UDP</code>端口<code>500</code>和<code>4500</code><span class="text-muted">(ipsec网络)</span></li>。'
       item3: 这些规则<b>不会</b>自动添加。
     instanceType:
@@ -7437,8 +7437,8 @@ nodeDriver:
       link: 了解更多
       text: 关于将要开放的端口信息
     needs:
-      label: "{appName}正常工作需要安全组允许以下通讯: "
-      item1: '从{appName}服务器到主机的<code>TCP</code>端口<code>22</code><span class="text-muted">(SSH连接用于安装docker)'
+      label: "AKE正常工作需要安全组允许以下通讯: "
+      item1: '从AKE服务器到主机的<code>TCP</code>端口<code>22</code><span class="text-muted">(SSH连接用于安装docker)'
       item2: 与其他所有主机之间的 <code>UDP</code>端口<code>500</code>和<code>4500</code><span class="text-muted">(用于IPsec网络)</span>
       item3: 这些规则<b>不会</b>自动添加
     selectSecurityGroupAction: '下一步: 设置实例选项'
@@ -7781,7 +7781,7 @@ nodeDriver:
       sshPasswordLengthNotValid: SSH密码的长度应为8至30之间
       sshPasswordInvalidCharacter: SSH密码包含非法字符
       sshPasswordFormatError: 'SSH密码必须至少包括大写字符，小写字符，数字和特殊字符中的三种'
-      nameNotValidForApp: 根据{appName}主机名规则该名称无效。
+      nameNotValidForApp: 根据AKE主机名规则该名称无效。
   zstack:
     access:
       title: 1. 帐户访问
@@ -8126,13 +8126,13 @@ schedulingRuleRow:
 serverUrl:
   header:
     label: Rancher Server URL
-    detail: "{appName}安装使用的地址，集群中的所有节点都需要能够访问此地址"
+    detail: "AKE安装使用的地址，集群中的所有节点都需要能够访问此地址"
   button:
     save: 保存URL
 
 siteAccess:
   header: 站点访问
-  helpText: "配置允许哪些人登录和使用{appName}"
+  helpText: "配置允许哪些人登录和使用AKE"
   unrestricted: "允许所有有效的{individuals}"
   restricted: "允许集群成员，项目成员以及授权的{individuals}和{collection}"
   required: "仅允许授权的{individuals}和{collection}"
@@ -8169,7 +8169,7 @@ tableCountSelect:
 telemetryOpt:
   header: 信息统计
   subtext: |
-    Rancher Labs希望能够收集您环境的匿名配置信息以帮助改进{appName}产品。<br/>信息不会被提供给任何第三方，收集的信息不包含特定的资源名称或地址。
+    Rancher Labs希望能够收集您环境的匿名配置信息以帮助改进AKE产品。<br/>信息不会被提供给任何第三方，收集的信息不包含特定的资源名称或地址。
   learnMore:
     label: 了解更多
   label: 允许收集匿名统计信息。
@@ -8818,7 +8818,7 @@ units:
 windowsCluster:
   logging:
     vxlanWarning: |
-      由于<a href="https://github.com/kubernetes/kubernetes/issues/79359" target="_blank">kubernetes/kubernetes#79359</a>这个问题，{appName} Logging目前无法运行在VxLan模式下。我们正在与微软合作， 以修复Kubernetes相关的问题。
+      由于<a href="https://github.com/kubernetes/kubernetes/issues/79359" target="_blank">kubernetes/kubernetes#79359</a>这个问题，AKE Logging目前无法运行在VxLan模式下。我们正在与微软合作， 以修复Kubernetes相关的问题。
     kafka:
       brokerTypeHelpText: 使用Broker列表作为Kafka连接接入点。
     helpText: '我们将使用fluentd从每个容器中收集stdout/stderr日志，以及收集每个<b>Linux</b>主机<code >/var/log/containers/</code>路径和每个<b>Windows</b>主机<code >c:/var/log/containers/</code>路径下的日志文件，并且可以将日志发送到下面配置的目标日志收集服务。'
@@ -8949,7 +8949,7 @@ rulesPage:
   noMatch: 没有流量规则匹配当前搜索
   noData: 当前没有流量规则
 ruleDetailPage:
-  header: "流量规则: {appName}"
+  header: "流量规则: AKE"
   rules:
     virtualservices: 虚拟服务
     serviceentries: 服务条目
@@ -9317,7 +9317,7 @@ etcd:
     label: 失败提议次数
 
 clusterDashboard:
-  systemProject: "这是包含所有Kubernetes和{appName}系统命名空间的系统项目，修改当前项目中的资源配置可能会导致系统无法正常运行。"
+  systemProject: "这是包含所有Kubernetes和AKE系统命名空间的系统项目，修改当前项目中的资源配置可能会导致系统无法正常运行。"
   notActive: 当前集群<b>{state}</b>中...
   notReady: 当前集群<b>{state}</b>中...，在API准备就绪之前，直接与API交互的功能将不可用。
   used: 使用值
@@ -9326,9 +9326,9 @@ clusterDashboard:
     cluster: 集群监控
     etcd: Etcd监控
     k8s: Kubernetes组件监控
-    rancher: '{appName}日志功能监控'
+    rancher: 'AKE日志功能监控'
     node: 节点监控
-  noRancherComponents: '{appName}日志功能未启用或者没有足够的数据绘制图表。'
+  noRancherComponents: 'AKE日志功能未启用或者没有足够的数据绘制图表。'
   cpu: CPU
   memory: Memory
   pods: Pods

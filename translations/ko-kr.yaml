@@ -187,7 +187,7 @@ accountsPage:
   modal:
     password: 비밀번호 변경하기
 appDetailPage:
-  header: "앱 : {appName}"
+  header: "앱 : AKE"
   endpoints:
     title: 엔드포인트
     detail: '이 애플리케이션의 공용 엔드포인트'
@@ -371,8 +371,8 @@ authPage:
         labelText: UID 필드
         display: "UID 필드:"
       rancherApiHost:
-        labelText: "{appName} API 호스트"
-        display: "{appName} API 호스트:"
+        labelText: "AKE API 호스트"
+        display: "AKE API 호스트:"
       groups:
         labelText: 그룹 필드
         display: "그룹 필드:"
@@ -686,7 +686,7 @@ failWhalePage:
 haPage:
   header: 고 가용성
   setup:
-    prefix: "호스트 중 하나가 장애가 가는 경우에도 {appName} 계속 실행 되도록 여러 컨테이너를 서로 다른 호스트에 배포할 수 있습니다.  "
+    prefix: "호스트 중 하나가 장애가 가는 경우에도 AKE 계속 실행 되도록 여러 컨테이너를 서로 다른 호스트에 배포할 수 있습니다.  "
     link: 문서 보기
     suffix: " 설치 및 사용에 관한 정보."
   table:
@@ -859,7 +859,7 @@ catalogSettings:
   header: 카탈로그
   library:
     label: 라이브러리
-    detail: '{appName} 으로 유지하는 선별된 애플리케이션 템플릿의 공식 저장소.'
+    detail: 'AKE 으로 유지하는 선별된 애플리케이션 템플릿의 공식 저장소.'
   helm:
     stable:
       label: Helm Stable

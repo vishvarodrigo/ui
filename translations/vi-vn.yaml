@@ -173,7 +173,7 @@ authPage:
           text: Xác thực
       disableAccess:
         header: "Khu vực nguy hiểm&trade;"
-        warning: '<b class="text-danger"> chú ý:</b> Tắt tính năng kiểm soát truy cập sẽ cung cấp cho hoàn toàn quyền kiểm soát {appName} cho bất cứ ai có thể truy cập trang này hoặc các API.'
+        warning: '<b class="text-danger"> chú ý:</b> Tắt tính năng kiểm soát truy cập sẽ cung cấp cho hoàn toàn quyền kiểm soát AKE cho bất cứ ai có thể truy cập trang này hoặc các API.'
         disable: Vô hiệu hoá kiểm soát truy cập
       groupsField: 'Nhóm:'
       displayName: 'Tên hiển thị:'

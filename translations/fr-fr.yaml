@@ -190,7 +190,7 @@ accountsPage:
   modal:
     password: Modifier le mot de passe
 appDetailPage:
-  header: "App: {appName}"
+  header: "App: AKE"
   endpoints:
     title: Points d'accès
     detail: 'Point d''accès public pour cette application'
@@ -379,8 +379,8 @@ authPage:
         labelText: Champ UID
         display: "Champ UID:"
       rancherApiHost:
-        labelText: "{appName} Hôte de l'API"
-        display: "{appName} Hôte de l'API:"
+        labelText: "AKE Hôte de l'API"
+        display: "AKE Hôte de l'API:"
       groups:
         labelText: Champ Groupes
         display: "Champ Groupes:"
@@ -417,7 +417,7 @@ authPage:
           text: Authentification
       disableAccess:
         header: "Zone dangereuse&trade;"
-        warning: '<b class="text-danger">Attention:</b> Désactiver le contrôle d''accès donne le contrôle complet à {appName}, à quiconque accède à cette page ou l''API .'
+        warning: '<b class="text-danger">Attention:</b> Désactiver le contrôle d''accès donne le contrôle complet à AKE, à quiconque accède à cette page ou l''API .'
         disable: Désactiver le contrôle d’accès
       groupsField: 'Groupes :'
       displayName: 'Nom Public :'
@@ -459,7 +459,7 @@ authPage:
           helpText: "Pour modifier l'authentification GitHub, desactiver le controle d'accès ci-dessous, puis le parametrer à nouveau."
       disableAccess:
         header: "Zone Dangereuse&trade;"
-        warning: '<b class="text-danger">Attention:</b> Désactivé le control d''accès donne le contrôle complet à {appName}, à quiconque accède à cette page (ou l''API) .'
+        warning: '<b class="text-danger">Attention:</b> Désactivé le control d''accès donne le contrôle complet à AKE, à quiconque accède à cette page (ou l''API) .'
         disable: Désactiver l'accès Github
     notAuthenticated:
       header: "1. Configurer une authentification Github"
@@ -471,14 +471,14 @@ authPage:
         li2:
           text: 'Clicker sur "Register new application" et remplir le formulaire:'
           ul:
-            li1: '<b>Application name:</b> <span class="text-muted">Nom, e.g. Mon {appName}</span>'
+            li1: '<b>Application name:</b> <span class="text-muted">Nom, e.g. Mon AKE</span>'
             li2: 'URL de la Page d''accueil'
             li3: '<b>Application description:</b> <span class="text-muted">Descriptions, optionel</span>'
             li4: 'URL de rappel d''Autorisation'
         li3:
           text: 'Clicker sur "Register Application" '
       form:
-        header: '2. configurer {appName} pour utiliser votre application pour l’authentification'
+        header: '2. configurer AKE pour utiliser votre application pour l’authentification'
         subtext: 'Copier/Coller le Client ID et le Secret depuis le coins en haut à droite de votre nouvelle application.'
         clientId:
           labelText: ID Client
@@ -544,18 +544,18 @@ authPage:
       disabled: 'L''authentification locale n''est pas configurée'
     subtext:
       enabled:
-        text: '{appName} est configuré pour autoriser l’accès aux comptes dans sa base de données locale.'
+        text: 'AKE est configuré pour autoriser l’accès aux comptes dans sa base de données locale.'
         alwaysOn: 'L''authentification locale sera toujours activée, mais vous pouvez sélectionner un autre moyen d''authentification supplémentaire.'
         linkText: Gérer les comptes
-      disabled: '{appName} peut être configuré pour restreindre l’accès à un ensemble de comptes définis dans la base de données {appName}.  Ce n''est pas actuellement mis en place, donc quiconque qui atteint cette page (ou l’API) a un contrôle total sur le système.'
+      disabled: 'AKE peut être configuré pour restreindre l’accès à un ensemble de comptes définis dans la base de données AKE.  Ce n''est pas actuellement mis en place, donc quiconque qui atteint cette page (ou l’API) a un contrôle total sur le système.'
     accessEnabled:
       header: 'Zone Dangereuse&trade;'
-      warning: '<b class="text-danger">Attention:</b> Désactiver le contrôle d''accès donne le contrôle complet à {appName}, à quiconque accède à cette page ou l''API .'
+      warning: '<b class="text-danger">Attention:</b> Désactiver le contrôle d''accès donne le contrôle complet à AKE, à quiconque accède à cette page ou l''API .'
       buttonText:
         prompt: Désactiver le contrôle d’accès
     accessDisabled:
       header: '1. configurer un utilisateur Admin'
-      helpText: 'Cet utilisateur va devenir l’administrateur qui a un contrôle complet de {appName}.'
+      helpText: 'Cet utilisateur va devenir l’administrateur qui a un contrôle complet de AKE.'
       form:
         login:
           labelText: Nom d'utilisateur
@@ -816,7 +816,7 @@ containersPage:
     orchestrator: Installer un autre orchestrateur
     kubernetesLink: Installe Kubernetes
 clusterDashboard:
-  systemProject: Il s'agit du projet système qui contient tous les espaces de noms de Kubernetes et de {appName} . Les modifications apportées aux ressources dans le projet système peuvent endommager le cluster.
+  systemProject: Il s'agit du projet système qui contient tous les espaces de noms de Kubernetes et de AKE . Les modifications apportées aux ressources dans le projet système peuvent endommager le cluster.
   notActive: Ce cluster est actuellement <b>{state}</b>.
   notReady: Ce cluster est actuellement <b>{state}</b>; les zones qui interagissent directement avec lui ne seront pas disponibles tant que l'API n'est pas prête.
   used: Utilisé
@@ -968,7 +968,7 @@ time:
 haPage:
   header: Haute-Disponibilité
   setup:
-    prefix: "Plusieurs conteneurs de serveur peuvent être déployés sur des hôtes différents pour que {appName} continue à fonctionner même si un des hôtes échoue.  "
+    prefix: "Plusieurs conteneurs de serveur peuvent être déployés sur des hôtes différents pour que AKE continue à fonctionner même si un des hôtes échoue.  "
     link: Consultez la documentation
     suffix: "pour plus d’informations sur l’installation et l’utilisation."
   table:
@@ -1089,9 +1089,9 @@ k8sPage:
       helpText: |
         Mettez ceci dans <code>~/.kube/config</code> :
 loginPage:
-  greeting: "Salut!<br><span>Bienvenue sur {appName}</span>"
-  githubMessage: "{appName} Utilise GitHub pour gerer l'authentifiation.  Cliquer sur le bouton ci-dessous pour se connecter (en lecture seule) pour acceder aux information de compte Github."
-  shibbolethMessage: "{appName} utilise Shibboleth pour gérer les comptes.  Cliquez sur le bouton ci-dessous pour vous connecter à l’IDP Shibboleth configuré."
+  greeting: "Salut!<br><span>Bienvenue sur AKE</span>"
+  githubMessage: "AKE Utilise GitHub pour gerer l'authentifiation.  Cliquer sur le bouton ci-dessous pour se connecter (en lecture seule) pour acceder aux information de compte Github."
+  shibbolethMessage: "AKE utilise Shibboleth pour gérer les comptes.  Cliquez sur le bouton ci-dessous pour vous connecter à l’IDP Shibboleth configuré."
   shibbolethError:
     401: "Non autorisé"
     500: "Erreur interne du serveur"
@@ -1200,14 +1200,14 @@ servicePage:
     networkdriverservice: Service Réseau
     storagedriverservice: Service de Stockage
 signupPage:
-  header: 'S’inscrire à {appName}'
+  header: 'S’inscrire à AKE'
   form:
     button: S'inscrire
     labels:
       loginUsername: Nom
       email: E-mail 
   emailSuccess:
-    header: 'Bienvenue sur {appName}'
+    header: 'Bienvenue sur AKE'
     confirm:
       subtext: Confirmez votre email en cliquant sur le lien de vérification que nous venons d'envoyer dans votre boîte de réception.
       resend: Renvoyer l'email
@@ -1368,7 +1368,7 @@ ldap:
   accessConfig:
     header: "1. Configurer un serveur de {providerName}"
     subtext1: "Entrez l’adresse, le port et le protocole pour se connecter à votre serveur {providerName}.  <code>389</code> est le port standard non sécurisé, <code>636</code> pour TLS."
-    subtext2: "{appName} a besoin d’un compte de service qui a accès (lecture seule) à tous les domaines qui seront capables de se connecter, afin que nous puissions déterminer de quels groupes est membre un utilisateur quand ils fait une requête avec une clé d'API."
+    subtext2: "AKE a besoin d’un compte de service qui a accès (lecture seule) à tous les domaines qui seront capables de se connecter, afin que nous puissions déterminer de quels groupes est membre un utilisateur quand ils fait une requête avec une clé d'API."
     port:
       labelText: Port
       checkbox: TLS
@@ -1454,7 +1454,7 @@ billingInfo:
 catalogSettings:
   certified:
     header:
-      rancher: "Bibliothèque certifiée {appName}"
+      rancher: "Bibliothèque certifiée AKE"
       pl: Bibliothèque certifiée
   community:
     header:
@@ -1849,7 +1849,7 @@ formVolumes:
     source: Source
 hostSettings:
   header: URL d’Enregistrement de l'Hôte
-  subtext: Quelle URL de base les hôtes doivent utiliser pour se connecter à l’API de {appName} ?
+  subtext: Quelle URL de base les hôtes doivent utiliser pour se connecter à l’API de AKE ?
   hostUrl:
     local: "Adresse de ce site :"
     new:
@@ -1857,7 +1857,7 @@ hostSettings:
       placeholder: "par exemple http://exemple.com:8080"
   helpText:
     static1: "N’incluez pas <code>/ v1</code> ou tout autre chemin, mais si vous faites"
-    static2: "en face de {appName}, n’oubliez pas d’utiliser <code>https://</code>."
+    static2: "en face de AKE, n’oubliez pas d’utiliser <code>https://</code>."
     isRancher: '<a href="{docsBase}/installing-rancher/installing-server/basic-ssl-config/" target="_blank"> terminaison SSL</a>'
     sslTerm: Terminaison SSL
   notPublic:
@@ -1965,7 +1965,7 @@ modalEditSetting:
   reset:
     label: Rétablir les valeurs par défaut
 modalFeedback:
-  header: Bienvenue sur {appName} !
+  header: Bienvenue sur AKE !
   subtitle: "Avant de commencer, s’il vous plaît parlez-nous un peu de vous..."
   send: Pour Commencer
 modalImport:
@@ -1980,7 +1980,7 @@ modalProcessError:
 modalShortcuts:
   project: Projet
 modalWelcome:
-  header: Bienvenue sur {appName} !
+  header: Bienvenue sur AKE !
   closeModal: J'ai compris
 namespaceGroup:
   project: "Pas dans un projet"
@@ -2099,7 +2099,7 @@ schedulingRuleRow:
   containerName: conteneur avec le nom
 siteAccess:
   header: Accès au Site
-  helpText: "Configurer ceux qui devraient pouvoir se connecter et utiliser {appName}."
+  helpText: "Configurer ceux qui devraient pouvoir se connecter et utiliser AKE."
   unrestricted: "Permettre à n’importe quel {individuals} valide"
   required: "Restreindre l’accès aux seuls {individuals} autorisés et {collection}"
   listHeader: "{individuals} autorisés et {collection}"
@@ -2110,7 +2110,7 @@ siteAccess:
 telemetryOpt:
   header: Statistiques
   subtext: |
-    Rancher Labs souhaite recueillir des informations anonymes sur la configuration de votre installation pour aider à améliorer {appName}. <br/> Vos données ne seront pas partagées avec une autre personne, et aucun des noms de ressources spécifiques ou les adresses ne sont collectées.
+    Rancher Labs souhaite recueillir des informations anonymes sur la configuration de votre installation pour aider à améliorer AKE. <br/> Vos données ne seront pas partagées avec une autre personne, et aucun des noms de ressources spécifiques ou les adresses ne sont collectées.
   learnMore:
     label: En savoir Plus
   label: Permettre la collecte de statistiques anonymes
