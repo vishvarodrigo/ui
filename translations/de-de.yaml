@@ -190,7 +190,7 @@ accountsPage:
   modal:
     password: Passwort ändern
 appDetailPage:
-  header: "Anwendung: {appName}"
+  header: "Anwendung: AKE"
   endpoints:
     title: Endpunkte
     detail: 'Öffentlicher Endpunkte dieser Anwendung'
@@ -379,8 +379,8 @@ authPage:
         labelText: Feld für die UID
         display: "Feld für die UID:"
       rancherApiHost:
-        labelText: "{appName} API-Host"
-        display: "{appName} API-Host:"
+        labelText: "AKE API-Host"
+        display: "AKE API-Host:"
       groups:
         labelText: Gruppen-Feld
         display: "Gruppen Feld:"
@@ -417,7 +417,7 @@ authPage:
           text: Authentifizierung
       disableAccess:
         header: "Gefahrenzone&trade;"
-        warning: '<b class="text-danger">Achtung:</b> Das deaktivieren der Zugriffskontrolle wird jedem, der diese Seite oder API erreicht, volle Kontrolle über {appName} geben.'
+        warning: '<b class="text-danger">Achtung:</b> Das deaktivieren der Zugriffskontrolle wird jedem, der diese Seite oder API erreicht, volle Kontrolle über AKE geben.'
         disable: Zugriffskontrolle deaktivieren
       groupsField: 'Gruppen:'
       displayName: 'Anzeigename:'
@@ -459,7 +459,7 @@ authPage:
           helpText: "Um die konfigurierte GitHub Anwendung zu ändern zunächst die Zugriffskontrolle deaktivieren und dann erneut konfigurieren."
       disableAccess:
         header: "Gefahrenzone&trade;"
-        warning: '<b class="text-danger">Achtung:</b> Das Deaktiveren der Zugriffskontrolle gibt jedem mit Zugriff auf diese Seite oder die API alle Rechte für {appName}.'
+        warning: '<b class="text-danger">Achtung:</b> Das Deaktiveren der Zugriffskontrolle gibt jedem mit Zugriff auf diese Seite oder die API alle Rechte für AKE.'
         disable: Deaktivieren des Github-Zugriffs
     notAuthenticated:
       header: "1. Eine GitHub Anwendung einrichten"
@@ -471,14 +471,14 @@ authPage:
         li2:
           text: 'Klicken Sie auf "Neue Anwendung registrieren" und füllen Sie das Formular aus:'
           ul:
-            li1: '<b>Name der Anwendung:</b> <span class="text-muted">z.B. Meine {appName}</span>'
+            li1: '<b>Name der Anwendung:</b> <span class="text-muted">z.B. Meine AKE</span>'
             li2: 'Homepage URL'
             li3: '<b>Beschreibung der Anwendung:</b> <span class="text-muted">optional</span>'
             li4: 'Authorisierungs-URL'
         li3:
           text: '"Anwendung registtrieren" anklicken'
       form:
-        header: '2. Konfiguriere {appName} um die Anwendung zur Authentifizierung zu nutzen'
+        header: '2. Konfiguriere AKE um die Anwendung zur Authentifizierung zu nutzen'
         subtext: 'Kopiere und füge die Client ID und das Secret von der Ecke rechts oben in die neu erstellte Anwendung ein.'
         clientId:
           labelText: Client-ID
@@ -510,7 +510,7 @@ authPage:
         header: Allgemein
     configure:
       header: '1. Azure AD Zugang konfigurieren'
-      replyUrl: "Azure AD erfordert eine Whitelist-URL für Ihren {appName} Server, bevor Sie mit dem Setup beginnen. Stellen Sie sicher, dass die folgende URL im Abschnitt Antwort-URL Ihres Azure-Portals festgelegt ist. Bitte beachten Sie, dass es bis zu 5 Minuten dauern kann, bis die Whitelist-URL verbreitet wird."
+      replyUrl: "Azure AD erfordert eine Whitelist-URL für Ihren AKE Server, bevor Sie mit dem Setup beginnen. Stellen Sie sicher, dass die folgende URL im Abschnitt Antwort-URL Ihres Azure-Portals festgelegt ist. Bitte beachten Sie, dass es bis zu 5 Minuten dauern kann, bis die Whitelist-URL verbreitet wird."
       help: Geben Sie die Mandanten-ID, die Client-ID und die Administratorbenutzerdaten ein, um eine Verbindung zu Ihrem Azure AD-Authentifizierungskonto herzustellen.
       applicationId:
         label: Anwendungs-ID
@@ -555,18 +555,18 @@ authPage:
       disabled: 'Lokale Authentifizierung ist nicht konfiguriert'
     subtext:
       enabled:
-        text: '{appName} ist für den Zugriff durch Accounts in der lokalen Datenbank konfiguriert.'
+        text: 'AKE ist für den Zugriff durch Accounts in der lokalen Datenbank konfiguriert.'
         alwaysOn: 'Die lokale Authentifizierung wird immer aktiviert sein, aber Sie können ein anderes Authentifizierungsschema auswählen, das zusätzlich zur lokalen verwendet werden soll.'
         linkText: Konten verwalten
-      disabled: '{appName} kann so konfiguriert werden, dass der Zugriff auf in der {appName} Datenbank definierte  Benutzerkonten beschränkt ist. Dies ist aktuell nicht konfiguriert, so dass jeder Benutzer dieser Seite (oder der API) volle Kontrolle über das System hat.'
+      disabled: 'AKE kann so konfiguriert werden, dass der Zugriff auf in der AKE Datenbank definierte  Benutzerkonten beschränkt ist. Dies ist aktuell nicht konfiguriert, so dass jeder Benutzer dieser Seite (oder der API) volle Kontrolle über das System hat.'
     accessEnabled:
       header: 'Gefahrenzone&trade;'
-      warning: '<b class="text-danger">Achtung:</b> Das Deaktiveren der Zugriffskontrolle gibt jedem mit Zugriff auf diese Seite oder die API alle Rechte für {appName}.'
+      warning: '<b class="text-danger">Achtung:</b> Das Deaktiveren der Zugriffskontrolle gibt jedem mit Zugriff auf diese Seite oder die API alle Rechte für AKE.'
       buttonText:
         prompt: Zugriffskontrolle deaktivieren
     accessDisabled:
       header: '1. Admin Benutzer einrichten'
-      helpText: 'Dieser Benutzer wird volle Berechtigungen über {appName} erhalten.'
+      helpText: 'Dieser Benutzer wird volle Berechtigungen über AKE erhalten.'
       form:
         login:
           labelText: Login Benutzername
@@ -710,7 +710,7 @@ namespacesPage:
 clusterPage:
   edit: Cluster bearbeiten
   removeMemberNote: 'Hinweis: Das Entfernen von Benutzer entfernt nicht die Projektberechtigungen'
-  internal: '<b>Achtung:</b> Dies ist der Cluster, den {appName} als Datenspeicher verwendet. Nur Administratoren sollten Schreibzugriff auf diesen Cluster erteilt werden.<br>Benutzer mit Schreibzugriff auf diesen Cluster können sich selbst Zugriff auf alle anderen von dieser Installation verwalteten Cluster gewähren.'
+  internal: '<b>Achtung:</b> Dies ist der Cluster, den AKE als Datenspeicher verwendet. Nur Administratoren sollten Schreibzugriff auf diesen Cluster erteilt werden.<br>Benutzer mit Schreibzugriff auf diesen Cluster können sich selbst Zugriff auf alle anderen von dieser Installation verwalteten Cluster gewähren.'
 projectsListNamespacePage:
   header: Namespaces
   notIn: Nicht in einem Projekt
@@ -844,7 +844,7 @@ containersPage:
     orchestrator: Installieren Sie einen anderen Orchestrator
     kubernetesLink: Kubernetes installieren
 clusterDashboard:
-  systemProject: Dies ist das Systemprojekt, das alle Kubernetes und {appName} Systemnamensräume enthält. Änderungen an Ressourcen im Systemprojekt können den Cluster beschädigen.
+  systemProject: Dies ist das Systemprojekt, das alle Kubernetes und AKE Systemnamensräume enthält. Änderungen an Ressourcen im Systemprojekt können den Cluster beschädigen.
   notActive: Dieser Cluster ist derzeit <b>{state}</b>.
   notReady: Dieser Cluster ist derzeit <b>{state}</b>; Bereiche, die direkt damit interagieren, sind erst verfügbar, wenn die API bereit ist.
   used: Genutzt
@@ -1135,7 +1135,7 @@ time:
 haPage:
   header: Hohe Verfügbarkeit
   setup:
-    prefix: "Mehrere Server-Container können auf verschiedenen Hosts hochgeladen werden, damit {appName} selbst beim Absturz eines Hosts weiterlaufen kann.  "
+    prefix: "Mehrere Server-Container können auf verschiedenen Hosts hochgeladen werden, damit AKE selbst beim Absturz eines Hosts weiterlaufen kann.  "
     link: Siehe Dokumentation
     suffix: "für Informationen zur Einrichtung und Nutzung."
   table:
@@ -1286,9 +1286,9 @@ k8sPage:
       downloadText: |
         Dann <a href="{downloadUrl}" target="_blank">herunterladen</a> (falls erforderlich) und <code>kubectl</code> ausführen
 loginPage:
-  greeting: "Howdy!<br><span>Willkommen bei {appName}</span>"
-  githubMessage: "{appName} nutzt GitHub um Acocunts und Teams zu verwalten.  Klicken Sie den Button um sich einzuloggen und uns lesenden Zugriff auf ihre GitHub Zugangsinformationen zu geben."
-  shibbolethMessage: "{appName} benutzt Shibboleth zur Verwaltung von Accounts.  Für die Anmeldung bei der Shibboleth IDP auf den nachstehenden Button klicken."
+  greeting: "Howdy!<br><span>Willkommen bei AKE</span>"
+  githubMessage: "AKE nutzt GitHub um Acocunts und Teams zu verwalten.  Klicken Sie den Button um sich einzuloggen und uns lesenden Zugriff auf ihre GitHub Zugangsinformationen zu geben."
+  shibbolethMessage: "AKE benutzt Shibboleth zur Verwaltung von Accounts.  Für die Anmeldung bei der Shibboleth IDP auf den nachstehenden Button klicken."
   shibbolethError:
     401: "Nicht autorisiert"
     500: "Interner Serverfehler"
@@ -1422,14 +1422,14 @@ servicePage:
   sidekick:
     tabHeader: Seitenwagen
 signupPage:
-  header: 'Anmeldung für {appName}'
+  header: 'Anmeldung für AKE'
   form:
     button: Registrieren
     labels:
       loginUsername: Name
       email: E-Mail
   emailSuccess:
-    header: 'Willkommen bei {appName}'
+    header: 'Willkommen bei AKE'
     confirm:
       subtext: Bestätigen Sie Ihre E-Mail durch Klick auf den Bestätigungslink, den wir Ihnen soeben gesendet haben.
       resend: E-Mail erneut senden
@@ -1679,7 +1679,7 @@ ldap:
   accessConfig:
     header: "1. Einen {providerName} Server konfigurieren"
     subtext1: "Geben Sie Adresse, Port und Protokoll für die Verbindung zum {providerName} Server ein. <code>389</code> ist der Stadardport für eine unsichere, <code>636</code> für eine via TLS gesicherte Verbindung."
-    subtext2: "{appName} erfordert einen Serviceaccount der lesenden Zugriff auf alle Domains für die eine Anmeldung möglich sein soll. Auf diesem Weg ermitteln wir die Gruppen eines Benutzers sobald diese eine API Abfrage durchführen."
+    subtext2: "AKE erfordert einen Serviceaccount der lesenden Zugriff auf alle Domains für die eine Anmeldung möglich sein soll. Auf diesem Weg ermitteln wir die Gruppen eines Benutzers sobald diese eine API Abfrage durchführen."
     port:
       labelText: Port
       checkbox: TLS
@@ -1795,7 +1795,7 @@ catalogSettings:
   helpText: Derzeit werden nur Helm-Kataloge unterstützt
   library:
     label: Bibliothek
-    detail: Offizielles Repository für kuratierte Anwendungsvorlagen, die von {appName} verwaltet werden.
+    detail: Offizielles Repository für kuratierte Anwendungsvorlagen, die von AKE verwaltet werden.
   helm:
     stable:
       label: Helm Stable
@@ -1804,7 +1804,7 @@ catalogSettings:
       label: Helm Incubator
   certified:
     header:
-      rancher: "{appName} Zertifizierte Bibliothek"
+      rancher: "AKE Zertifizierte Bibliothek"
       pl: Zertifizierte Bibliothek
     detail:
       pl: Offiziell gepflegte Vorlagen, die für Kernfunktionen wie Kubernetes erforderlich sind.
@@ -1820,7 +1820,7 @@ catalogSettings:
     helpText:
       help-name: 'Eindeutiger Name'
       help-repo: 'Repository URL :'
-      help-git: "GIT-basierte Katalog-URL, <em class='text-lowercase'>z. B. https://github.com/{appName}/charts.git</em>"
+      help-git: "GIT-basierte Katalog-URL, <em class='text-lowercase'>z. B. https://github.com/AKE/charts.git</em>"
     addActionLabel: Katalog hinzufügen
     noMatch: Keine Kataloge entsprechen der aktuellen Suche.
     noData: Es sind keine benutzerdefinierten Kataloge definiert.
@@ -2023,7 +2023,7 @@ clusterNew:
       private:
         label: Interne Adresse
         placeholder: z.B. 1.2.3.4
-    label: '{appName} Kubernetes Engine'
+    label: 'AKE Kubernetes Engine'
     shortLabel: Benutzerdefininert
     customize:
       label: Clusteroptionen
@@ -2125,7 +2125,7 @@ resourceEventList:
   noMatch: Keine Ereignisse gefunden, die den Suchkriterien entsprechen
 confirmDelete:
   titleWithoutResourceType: 'Sind SIe sicher, dass Sie Löschen wollen?'
-  environmentNote: 'Hinweis: Alle Ressourcen in diesem Projekt werden dauerhaft entfernt, einschließlich der durch {appName} erstellten Namespaces.'
+  environmentNote: 'Hinweis: Alle Ressourcen in diesem Projekt werden dauerhaft entfernt, einschließlich der durch AKE erstellten Namespaces.'
   clusterNote: 'Hinweis: Zugehörige Ressourcen wie Volumes, Balancer und Netzwerke, die im Cloud-Anbieter erstellt wurden, werden nicht automatisch entfernt.'
   clusterRoleTemplateBindingNote: "Hinweis: Die Projektberechtigungen des Benutzers werden nicht entfernt."
   protip: 'ProTip: Beim Klicken auf Entfernen die {key} Taste gedrückt halten um diese Bestätigung zu überspringen.'
@@ -2927,7 +2927,7 @@ formVolumes:
   onlySingleHost: Nur verfügbar, wenn Sie einen Container zu einem bestimmten Host hinzufügen.
 hostSettings:
   header: Host Registrierungs URL
-  subtext: Welche Basis-URL sollen Hosts verwenden um sich zur {appName} API verwenden?
+  subtext: Welche Basis-URL sollen Hosts verwenden um sich zur AKE API verwenden?
   hostUrl:
     local: "Adresse dieser Seite:"
     new:
@@ -2935,7 +2935,7 @@ hostSettings:
       placeholder: "z.B. http://example.com:8080"
   helpText:
     static1: "Keine Pfade wie <code>/v1</code> angeben, aber wenn Sie"
-    static2: "vor {appName} durchführen, verwenden Sie in jedem Fall <code>https://</code>."
+    static2: "vor AKE durchführen, verwenden Sie in jedem Fall <code>https://</code>."
     isRancher: '<a href="{docsBase}/installing-rancher/installing-server/basic-ssl-config/" target="_blank">SSL Terminierung</a>'
     sslTerm: SSL Terminierung
   notPublic:
@@ -3196,7 +3196,7 @@ schedulingRuleRow:
   containerName: Container mit Namen
 siteAccess:
   header: Seiten Zugriff
-  helpText: "Konfigurieren Sie wer sich anmelden und {appName} nutzen darf."
+  helpText: "Konfigurieren Sie wer sich anmelden und AKE nutzen darf."
   unrestricted: "Erlaube alle gültigen {individuals}"
   required: "Schränke den Zugriff auf Authorisierte {individuals} und {collection}"
   listHeader: "Authorisierte {individuals} und {collection}"
@@ -3217,7 +3217,7 @@ tableCountSelect:
 telemetryOpt:
   header: Statistiken
   subtext: |
-    Rancher-Labs möchte anonyme Informationen über die Konfiguration Ihrer Installation sammeln, um beizutragen {appName} besser zu machen. <br/> Ihre Daten werden nicht mit Dritten geteilt und keine Ihrer verwendeten Ressourcennamen oder Adressen gesammelt.
+    Rancher-Labs möchte anonyme Informationen über die Konfiguration Ihrer Installation sammeln, um beizutragen AKE besser zu machen. <br/> Ihre Daten werden nicht mit Dritten geteilt und keine Ihrer verwendeten Ressourcennamen oder Adressen gesammelt.
   learnMore:
     label: Mehr erfahren
   label: Erfassung anonymer Statistiken zulassen

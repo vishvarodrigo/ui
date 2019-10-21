@@ -138,7 +138,7 @@ authPage:
           text: Hitelesítés
       disableAccess:
         header: "Veszélyes Terület&trade;"
-        warning: '<b class="text-danger"> Figyelmeztetés:</b> A hozzáférés-szabályozás letiltása teljes hozzáférést biztosít az {appName} felett bárki számára, aki elérheti ezt az oldalt, vagy az API-t.'
+        warning: '<b class="text-danger"> Figyelmeztetés:</b> A hozzáférés-szabályozás letiltása teljes hozzáférést biztosít az AKE felett bárki számára, aki elérheti ezt az oldalt, vagy az API-t.'
         disable: Hozzáférés-szabályozás letiltása
       groupsField: 'Csoportok:'
       displayName: 'Megjelenített név:'
@@ -180,7 +180,7 @@ authPage:
           helpText: "A konfigurált GitHub alkalmazás megváltoztatásához tiltsd le a hozzáférési vezérlést, majd ismét állítsd be."
       disableAccess:
         header: "Veszélyes Terület&trade;"
-        warning: '<b class="text-danger">Figyelmeztetés:</b> A hozzáférés-vezérlés letiltása teljes körű hozzáférést biztosít a(z) {appName} szolgáltatásban bárkinek, aki elérheti ezt az oldalt vagy az API-t.'
+        warning: '<b class="text-danger">Figyelmeztetés:</b> A hozzáférés-vezérlés letiltása teljes körű hozzáférést biztosít a(z) AKE szolgáltatásban bárkinek, aki elérheti ezt az oldalt vagy az API-t.'
     notAuthenticated:
       header: "1. GitHub alkalmazás beállítása"
       ul:
@@ -191,14 +191,14 @@ authPage:
         li2:
           text: 'Kattints az "Új alkalmazás regisztrálása" gombra, majd töltsd ki az űrlapot:'
           ul:
-            li1: '<b>Alkalmazásnév</b> <span class="text-muted">Bármi, ami tetszik, pl.: Az én {appName} alkalmazásom</span>'
+            li1: '<b>Alkalmazásnév</b> <span class="text-muted">Bármi, ami tetszik, pl.: Az én AKE alkalmazásom</span>'
             li2: 'Honlap URL-címe'
             li3: '<b>Alkalmazás leírás:</b> <span class="text-muted">bármi, amit szeretnél, opcionális</span>'
             li4: 'Hitelesítés visszahívási URL'
         li3:
           text: 'Kattints az "Alkalmazás regisztrálásához"'
       form:
-        header: '2. {appName} hitelesítése beállítása az alkalmazásodhoz'
+        header: '2. AKE hitelesítése beállítása az alkalmazásodhoz'
         subtext: 'Másold be a kliens ID-t és a titkos kódot az újonnan létrehozott alkalmazás jobb felső sarkából.'
         clientId:
           labelText: Kliens ID
@@ -240,17 +240,17 @@ authPage:
   localAuth:
     subtext:
       enabled:
-        text: '{appName} úgy van beállítva, hogy hozzáférjen fiókokhoz a lokális adatbázisában.'
+        text: 'AKE úgy van beállítva, hogy hozzáférjen fiókokhoz a lokális adatbázisában.'
         linkText: Fiókok kezelése
-      disabled: 'A(z) {appName} beállítható úgy, hogy korlátozza az {appName} adatbázisban meghatározott fiókcsoporthoz való hozzáférést. Ez jelenleg nincs beállítva, így bárki, aki elérné ezt az oldalt (vagy az API-t), teljes mértékben irányíthatja a rendszert.'
+      disabled: 'A(z) AKE beállítható úgy, hogy korlátozza az AKE adatbázisban meghatározott fiókcsoporthoz való hozzáférést. Ez jelenleg nincs beállítva, így bárki, aki elérné ezt az oldalt (vagy az API-t), teljes mértékben irányíthatja a rendszert.'
     accessEnabled:
       header: 'Veszélyes Terület&trade;'
-      warning: '<b class="text-danger">Figyelmeztetés:</b> A hozzáférés-vezérlés letiltása teljes körű hozzáférést biztosít a(z) {appName} szolgáltatásban bárkinek, aki elérheti ezt az oldalt vagy az API-t.'
+      warning: '<b class="text-danger">Figyelmeztetés:</b> A hozzáférés-vezérlés letiltása teljes körű hozzáférést biztosít a(z) AKE szolgáltatásban bárkinek, aki elérheti ezt az oldalt vagy az API-t.'
       buttonText:
         prompt: Hozzáférés-szabályozás letiltása
     accessDisabled:
       header: '1. Admin felhasználó beállítása'
-      helpText: 'Ez a felhasználó lesz az admin, aki teljes felügyeletet kap {appName} felett.'
+      helpText: 'Ez a felhasználó lesz az admin, aki teljes felügyeletet kap AKE felett.'
       form:
         login:
           labelText: Felhasználónév a bejelentkezéshez
@@ -430,8 +430,8 @@ hostsPage:
         body:
           noData: Ez a hoszt nem rendelkezik egyetlen Kötettel sem
 loginPage:
-  githubMessage: "{appName} a GitHub segítségével kezeli a fiókokat és a csoportokat.  Kattints az alábbi gombra a bejelentkezéshez, és adj nekünk csak olvasható hozzáférést az alapvető GitHun fiókinformációidhoz."
-  shibbolethMessage: "{appName} a Shibboleth-et használja a fiókok kezeléséhez.  Kattints az alábbi gombra hogy bejelentkezz a beállított Shibboleth IDP-re."
+  githubMessage: "AKE a GitHub segítségével kezeli a fiókokat és a csoportokat.  Kattints az alábbi gombra a bejelentkezéshez, és adj nekünk csak olvasható hozzáférést az alapvető GitHun fiókinformációidhoz."
+  shibbolethMessage: "AKE a Shibboleth-et használja a fiókok kezeléséhez.  Kattints az alábbi gombra hogy bejelentkezz a beállított Shibboleth IDP-re."
   shibbolethError:
     401: "Jogosulatlan"
     500: "Belső kiszolgálóhiba"
@@ -637,7 +637,7 @@ billingInfo:
 catalogSettings:
   certified:
     header:
-      rancher: "Minősített könyvtár {appName}"
+      rancher: "Minősített könyvtár AKE"
       pl: Minősített könyvtár
   community:
     header:
@@ -1051,7 +1051,7 @@ modalProcessError:
   stackTrace: "Veremnyomkövetés:"
   close: Bezár
 modalWelcome:
-  header: Üdvözöljük az {appName}-ban!
+  header: Üdvözöljük az AKE-ban!
   closeModal: Értem
 newBalancer:
   header:
@@ -1157,7 +1157,7 @@ siteAccess:
 telemetryOpt:
   header: Statisztika
   subtext: |
-    Rancher Labs szeretne névtelen információkat gyűjteni a telepítésed beállításairól hogy jobbá tudja tenni a {appName} alkalmazást. <br/>Az adataid nem lesznek megosztva senki mással és a konkrét erőforrás nevét vagy címét sem gyűjtik össze.
+    Rancher Labs szeretne névtelen információkat gyűjteni a telepítésed beállításairól hogy jobbá tudja tenni a AKE alkalmazást. <br/>Az adataid nem lesznek megosztva senki mással és a konkrét erőforrás nevét vagy címét sem gyűjtik össze.
   learnMore:
     label: Tudj meg többet
   label: Engedélyezed a névtelen statisztikai adatgyűjtést

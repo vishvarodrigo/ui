@@ -1,10 +1,10 @@
 {
   "name": "ui",
-  "version": "2.3.18",
+  "version": "1.0",
   "private": true,
-  "repository": "https://github.com/rancher/ui",
+  "repository": "https://github.com/vishvarodrigo/ui",
   "license": "Apache-2.0",
-  "author": "Rancher Labs, Inc.",
+  "author": "Axiata Digital Labs",
   "directories": {
     "doc": "doc",
     "test": "tests"

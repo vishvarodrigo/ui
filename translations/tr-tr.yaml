@@ -191,7 +191,7 @@ accountsPage:
   modal:
     password: Parolayı değiştir
 appDetailPage:
-  header: "Uygulama: {appName}"
+  header: "Uygulama: AKE"
   endpoints:
     title: Uç noktaları
     detail: 'Bu uygulamanın Uç Noktaları'
@@ -380,8 +380,8 @@ authPage:
         labelText: UID Alanı
         display: "UID Alanı:"
       rancherApiHost:
-        labelText: "{appName} API Host"
-        display: "{appName} API Host:"
+        labelText: "AKE API Host"
+        display: "AKE API Host:"
       groups:
         labelText: Gruplar Alanı
         display: "Gruplar Alanı:"
@@ -418,7 +418,7 @@ authPage:
           text: Kimlik Doğrulama
       disableAccess:
         header: "Tehlikeli Bölge&trade;"
-        warning: '<b class="text-danger">Dikkat:</b> Erişim kontrolünü devre dışı bırakmak, bu sayfaya veya API''ye erişebilecek herkes için {appName} üzerinde tam kontrol sağlar.'
+        warning: '<b class="text-danger">Dikkat:</b> Erişim kontrolünü devre dışı bırakmak, bu sayfaya veya API''ye erişebilecek herkes için AKE üzerinde tam kontrol sağlar.'
         disable: Erişim kontrolünü devre dışı bırak
       groupsField: 'Gruplar:'
       displayName: 'Görünecek İsim:'
@@ -460,7 +460,7 @@ authPage:
           helpText: "Yapılandırılmış GitHub uygulamasını değiştirmek için aşağıdaki erişim kontrolünü devre dışı bırakın ve ardından tekrar kurun."
       disableAccess:
         header: "Tehlikeli Bölge&trade;"
-        warning: '<b class="text-danger">Dikkat:</b> Erişim kontrolünü devre dışı bırakmak, bu sayfaya veya API''ye erişebilecek herkes için {appName} üzerinde tam kontrol sağlar.'
+        warning: '<b class="text-danger">Dikkat:</b> Erişim kontrolünü devre dışı bırakmak, bu sayfaya veya API''ye erişebilecek herkes için AKE üzerinde tam kontrol sağlar.'
         disable: GiHub erişimini devre dışı bırak
     notAuthenticated:
       header: "1. GitHub Uygulamasını Ayarla"
@@ -472,14 +472,14 @@ authPage:
         li2:
           text: '"Yeni bir uygulama oluştur"'' a tıklayın ve formu doldurun:'
           ul:
-            li1: '<b>Uygulama adı:</b> <span class="text-muted">İstediğiniz herhangi bir şey, örn. {appName}</span>'
+            li1: '<b>Uygulama adı:</b> <span class="text-muted">İstediğiniz herhangi bir şey, örn. AKE</span>'
             li2: 'Anasayfa URL:'
             li3: '<b>Uygulama açıklaması:</b> <span class="text-muted">İstediğiniz herhangi bir şey, (zorunlu değil) </span>'
             li4: 'Yetkilendirme callback URL:'
         li3:
           text: '"Uygulamayı kaydet" e tıklayın'
       form:
-        header: '2. {appName} uygulamanızı kimlik doğrulaması için kullanmak üzere yapılandırın'
+        header: '2. AKE uygulamanızı kimlik doğrulaması için kullanmak üzere yapılandırın'
         subtext: 'Yeni oluşturulan uygulamanızın Client ID ve Client Secret bilgilerini kopyalayıp yapıştırın.'
         clientId:
           labelText: Client ID
@@ -511,7 +511,7 @@ authPage:
         header: Genel
     configure:
       header: 'Azure AD Hesabını Yapılandır'
-      replyUrl: "Azure AD, bu kuruluma başlamadan önce {appName} sunucunuz için white list'e alınmış bir URL gerektirir. Lütfen aşağıdaki URL’in Azure Portal’ınızın Reply URL bölümünde ayarlandığından emin olun. White list'teki URL’nin aktif olması 5 dakika kadar sürebilir."
+      replyUrl: "Azure AD, bu kuruluma başlamadan önce AKE sunucunuz için white list'e alınmış bir URL gerektirir. Lütfen aşağıdaki URL’in Azure Portal’ınızın Reply URL bölümünde ayarlandığından emin olun. White list'teki URL’nin aktif olması 5 dakika kadar sürebilir."
       help: Azure AD auth hesabınıza bağlanmak için Tenant ID, Client ID, and Admin kullanıcı bilgilerini girin.
       applicationId:
         label: Uygulama ID
@@ -556,18 +556,18 @@ authPage:
       disabled: 'Yerel Kimlik Doğrulama yapılandırılmamış'
     subtext:
       enabled:
-        text: '{appName}, yerel veritabanındaki hesaplara erişime izin verecek şekilde yapılandırılmış.'
+        text: 'AKE, yerel veritabanındaki hesaplara erişime izin verecek şekilde yapılandırılmış.'
         alwaysOn: 'Yerel Kimlik Doğrulama her zaman etkin olacak, ancak yerel olana ek olarak kullanılacak başka bir kimlik doğrulama şeması seçebilirsiniz.'
         linkText: Hesapları Yönet
-      disabled: '{appName}, {appName} veritabanında tanımlanan bir hesap grubuna erişimi kısıtlayacak şekilde yapılandırılabilir. Henüz yapılandırma yapılmadığından, bu sayfaya (veya API ye) erişebilen herkes sistem üzerinde tam kontrole sahiptir.'
+      disabled: 'AKE, AKE veritabanında tanımlanan bir hesap grubuna erişimi kısıtlayacak şekilde yapılandırılabilir. Henüz yapılandırma yapılmadığından, bu sayfaya (veya API ye) erişebilen herkes sistem üzerinde tam kontrole sahiptir.'
     accessEnabled:
       header: 'Tehlikeli Bölge&trade;'
-      warning: '<b class="text-danger">Dikkat:</b> Erişim kontrolünü devre dışı bırakmak, bu sayfaya veya API''ye erişebilecek herkes için {appName} üzerinde tam kontrol sağlar.'
+      warning: '<b class="text-danger">Dikkat:</b> Erişim kontrolünü devre dışı bırakmak, bu sayfaya veya API''ye erişebilecek herkes için AKE üzerinde tam kontrol sağlar.'
       buttonText:
         prompt: Erişim kontrolünü devre dışı bırak
     accessDisabled:
       header: '1. Admin kullanıcısı ayarlayın'
-      helpText: 'Bu kullanıcı, {appName} üzerinde tam kontrole sahip yönetici olacak.'
+      helpText: 'Bu kullanıcı, AKE üzerinde tam kontrole sahip yönetici olacak.'
       form:
         login:
           labelText: Oturum Açma Kullanıcı Adı
@@ -714,7 +714,7 @@ namespacesPage:
 clusterPage:
   edit: Cluster'ı Düzenle
   removeMemberNote: 'Not: Kullanıcıyı kaldırmak, kullanıcının proje izinlerini kaldırmayacaktır'
-  internal: '<b>Dikkat:</b> Bu, {appName} cluster''ı data store olarak kullanılmaktadır. Bu cluster''a yazma izni sadece yöneticilere verilmelidir.<br>Bu cluster''a yazma iznine sahip kullanıcılar, bu cluster''ı kullanarak, kendilerine başka bir cluster''a erişim izni verebilir.'
+  internal: '<b>Dikkat:</b> Bu, AKE cluster''ı data store olarak kullanılmaktadır. Bu cluster''a yazma izni sadece yöneticilere verilmelidir.<br>Bu cluster''a yazma iznine sahip kullanıcılar, bu cluster''ı kullanarak, kendilerine başka bir cluster''a erişim izni verebilir.'
 projectsListNamespacePage:
   header: Namespace'ler
   notIn: Projeye dahil değil
@@ -778,7 +778,7 @@ containersPage:
     orchestrator: Başka bir orchestrator yükle
     kubernetesLink: Kubernetes Yükle
 clusterDashboard:
-  systemProject: Bu proje sistem projesidir ve tüm Kubernetes'lere ve {appName} sistem namespace'ine sahiptir. Sistem projesinin kaynaklarında yapılan değişiklikler, cluster'a zarar verebilir.
+  systemProject: Bu proje sistem projesidir ve tüm Kubernetes'lere ve AKE sistem namespace'ine sahiptir. Sistem projesinin kaynaklarında yapılan değişiklikler, cluster'a zarar verebilir.
   notActive: Bu cluster şu anda <b>{state}</b>.
   notReady: Bu cluster şu anda <b>{state}</b>. Bu cluster ile doğrudan etkileşime giren alanlar, API hazır olana kadar kullanılamaz.
   used: Kullanılmış
@@ -1167,7 +1167,7 @@ newStack:
     uploadActionLabel: Diskten Oku
     namePlaceholder: Dosya Adı
     valuePlaceholder: Dosya İçeriği
-    protipLabel: '{appName} <code>compose.yml</code>, <code>docker-compose.yml</code>ve Kubernetes manifest dosyalarını destekler'
+    protipLabel: 'AKE <code>compose.yml</code>, <code>docker-compose.yml</code>ve Kubernetes manifest dosyalarını destekler'
   answers:
     label: Cevaplar (değişken değişimi)
     addActionLabel: Cevap Ekle
@@ -1773,7 +1773,7 @@ clusterNew:
       private:
         label: Internal Adres
         placeholder: örn. 1.2.3.4
-    label: '{appName} Kubernetes Motoru'
+    label: 'AKE Kubernetes Motoru'
     shortLabel: Özel
     customize:
       label: Cluster Seçenekleri
@@ -1839,8 +1839,8 @@ clusterNew:
     shortLabel: İçe Aktarılan
     command:
       instructionsAdminRole: "<b>Not:</b> Bir Google Kubernetes Engine (GKE) cluster'ını (veya size bağlı ClusterRole <b>cluster-admin</b> ile bir kubectl yapılandırma dosyası sağlamayan herhangi bir cluster'ı) içe aktarmak istiyorsanız, ClusterRole'u bağlamanız gerekir. <b>cluster-admin</b> için aşağıdaki komutu kullanın:<br/><br/> <b>[USER_ACCOUNT]</b> Google hesap adresinizle değiştirin (bunu <b>gcloud config get-value hesabı</b>kullanarak gerçekleştirebilirsiniz). Google Kubernetes Engine cluster'ını içe aktarmıyorsanız, kubectl yapılandırma dosyanızda yapılandırılmış yürütücü kullanıcıyla <b>[USER_ACCOUNT]</b> değiştirin."
-      instructions: "{appName} uygulamasına desteklenen Kubernetes sürümünü çalıştıran bir Kubernetes cluster'ı içe aktarmak isterseniz, bu cluster üzerinde aşağıdaki kubectl komutu çalıştırın:"
-      instructionsInsecure: "{appName} kurulumunuz güvenilmeyen/self-signed bir SSL sertifikasıyla çalışıyor ve 'bilinmeyen yetkili tarafından imzalanmış sertifika' gibi bir hata alıyorsanız, sertifika kontrolünü atlamak için aşağıdaki komutu çalıştırın:"
+      instructions: "AKE uygulamasına desteklenen Kubernetes sürümünü çalıştıran bir Kubernetes cluster'ı içe aktarmak isterseniz, bu cluster üzerinde aşağıdaki kubectl komutu çalıştırın:"
+      instructionsInsecure: "AKE kurulumunuz güvenilmeyen/self-signed bir SSL sertifikasıyla çalışıyor ve 'bilinmeyen yetkili tarafından imzalanmış sertifika' gibi bir hata alıyorsanız, sertifika kontrolünü atlamak için aşağıdaki komutu çalıştırın:"
 conditionSections:
   title: Durum
   detail: Mevcut {resourceType} kaynağının durumu
@@ -1864,7 +1864,7 @@ resourceEventList:
   noMatch: Mevcut aramayla eşleşen olay yok
 confirmDelete:
   titleWithoutResourceType: 'Silmek istediğinizden emin misiniz'
-  environmentNote: 'Not: Bu Proje içindeki tüm kaynaklar, {appName} ile oluşturulan ad alanları da dahil olmak üzere kalıcı olarak silinecektir.'
+  environmentNote: 'Not: Bu Proje içindeki tüm kaynaklar, AKE ile oluşturulan ad alanları da dahil olmak üzere kalıcı olarak silinecektir.'
   clusterNote: 'Not: Bulut sağlayıcısında oluşturulan birimler, balancer''lar ve ağlar gibi ilişkili kaynaklar otomatik olarak kaldırılmaz.'
   clusterRoleTemplateBindingNote: "Not: Kullanıcının proje izinleri kaldırılmayacak."
   systemProjectNamespaceNote: 'Sistemi projesi altındaki bir namespace''i kaldırıyorsunuz. Eğer kaldırılırsa bu cluster için zararlı etkilere neden olabilir.'

@@ -191,7 +191,7 @@ accountsPage:
   modal:
     password: Alterar Senha
 appDetailPage:
-  header: "Aplicação: {appName}"
+  header: "Aplicação: AKE"
   endpoints:
     title: Pontos de extremidade
     detail: 'Pontos de extremidade públicos deste aplicativo'
@@ -380,8 +380,8 @@ authPage:
         labelText: Campo UID
         display: "Campo UID:"
       rancherApiHost:
-        labelText: "{appName} hospedeiro da API"
-        display: "{appName} hospedeiro da API:"
+        labelText: "AKE hospedeiro da API"
+        display: "AKE hospedeiro da API:"
       groups:
         labelText: Grupos de Campo
         display: "Grupos de Campo:"
@@ -418,7 +418,7 @@ authPage:
           text: Autenticação
       disableAccess:
         header: "Zona perigosa&trade;"
-        warning: '<b class="text-danger">Cuidado:</b> Desativar o controle de acesso dará controle total sobre {appName} a qualquer pessoa que possa acessar esta página ou a API.'
+        warning: '<b class="text-danger">Cuidado:</b> Desativar o controle de acesso dará controle total sobre AKE a qualquer pessoa que possa acessar esta página ou a API.'
         disable: Desativar o controle de acesso
       groupsField: 'Grupos:'
       displayName: 'Exibir Nome:'
@@ -460,7 +460,7 @@ authPage:
           helpText: "Para alterar a aplicação GitHub configurado, desativar o controle de acesso abaixo e, em seguida, configurá-lo novamente."
       disableAccess:
         header: "Zona Perigosa&trade;"
-        warning: '<b class="text-danger">Cuidado:</b> A desativação de controle de acesso dará o controle completo sobre {appName} a qualquer um que pode chegar a esta página ou a API.'
+        warning: '<b class="text-danger">Cuidado:</b> A desativação de controle de acesso dará o controle completo sobre AKE a qualquer um que pode chegar a esta página ou a API.'
         disable: Desabilitar acesso ao GitHub
     notAuthenticated:
       header: "1. Configurar um aplicativo GitHub"
@@ -472,14 +472,14 @@ authPage:
         li2:
           text: 'Clique em "Register new application" e preencha o formulário:'
           ul:
-            li1: '<b>Application name:</b> <span class="text-muted">Qualquer coisa que você goste, p.ex. my {appName}</span>'
+            li1: '<b>Application name:</b> <span class="text-muted">Qualquer coisa que você goste, p.ex. my AKE</span>'
             li2: 'URL da Página inicial'
             li3: '<b>Application description:</b> <span class="text-muted">Qualquer coisa que você gosta, opcional</span>'
             li4: 'URL de retorno de chamada de autorização'
         li3:
           text: 'Clique em "Register Application"'
       form:
-        header: '2. Configurar {appName} para usar a sua aplicação para autenticação'
+        header: '2. Configurar AKE para usar a sua aplicação para autenticação'
         subtext: 'Copie e cole o Client ID e Secret a partir do canto superior direito do seu aplicativo recém-criado.'
         clientId:
           labelText: Client ID*
@@ -511,7 +511,7 @@ authPage:
         header: Geral
     configure:
       header: '1. Configure a Conta Azure AD'
-      replyUrl: "O Azure AD requer uma URL na lista de permissões para o servidor {appName} antes de iniciar essa configuração. Certifique-se de que o seguinte URL esteja definido na seção URL de resposta do Portal do Azure. Pode demorar até 5 minutos para que o URL da lista de permissões seja propagado."
+      replyUrl: "O Azure AD requer uma URL na lista de permissões para o servidor AKE antes de iniciar essa configuração. Certifique-se de que o seguinte URL esteja definido na seção URL de resposta do Portal do Azure. Pode demorar até 5 minutos para que o URL da lista de permissões seja propagado."
       help: Insira os detalhes do ID do locatário, do ID do cliente e do usuário administrador para se conectar à sua conta de autenticação do Azure AD.
       applicationId:
         label: ID da aplicação
@@ -556,18 +556,18 @@ authPage:
       disabled: 'A Autenticação Local não está configurada'
     subtext:
       enabled:
-        text: '{appName} é configurado para permitir o acesso a contas, na sua base de dados local.'
+        text: 'AKE é configurado para permitir o acesso a contas, na sua base de dados local.'
         alwaysOn: 'A Autenticação Local estará sempre habilitada mas você terá de usar outro meio de autenticação para usar em outro local.'
         linkText: Gerenciar Contas
-      disabled: '{appName} pode ser configurado para restringir o acesso a um conjunto de contas definido na {appName} banco de dados.  sso não é atualmente a configurado, assim qualquer um que chegar a esta página (ou a API) tem controlo total sobre o sistema.'
+      disabled: 'AKE pode ser configurado para restringir o acesso a um conjunto de contas definido na AKE banco de dados.  sso não é atualmente a configurado, assim qualquer um que chegar a esta página (ou a API) tem controlo total sobre o sistema.'
     accessEnabled:
       header: 'Zona Perigosa&trade;'
-      warning: '<b class="text-danger">Cuidado:</b> A desativação de controle de acesso dará o controle completo sobre {appName} a qualquer um que pode chegar a esta página ou a API.'
+      warning: '<b class="text-danger">Cuidado:</b> A desativação de controle de acesso dará o controle completo sobre AKE a qualquer um que pode chegar a esta página ou a API.'
       buttonText:
         prompt: Desativar controle de acesso
     accessDisabled:
       header: '1. Configurar um usuário Admin'
-      helpText: 'Este usuário será o administrador que tem total controle sobre {appName}.'
+      helpText: 'Este usuário será o administrador que tem total controle sobre AKE.'
       form:
         login:
           labelText: Nome de usuário de Login*
@@ -715,7 +715,7 @@ namespacesPage:
 clusterPage:
   edit: Editar Cluster
   removeMemberNote: 'Nota: A remoção do usuário não removerá suas permissões de projeto'
-  internal: '<b>Cuidado:</b> Esse é o grupo que {appName} está usando como armazenamento de dados. Somente administradores devem receber acesso de gravação a esse grupo.<br>Usuários com acesso de gravação a esse grupo podem usá-lo para conceder acesso a qualquer outro grupo gerenciado por essa instalação.'
+  internal: '<b>Cuidado:</b> Esse é o grupo que AKE está usando como armazenamento de dados. Somente administradores devem receber acesso de gravação a esse grupo.<br>Usuários com acesso de gravação a esse grupo podem usá-lo para conceder acesso a qualquer outro grupo gerenciado por essa instalação.'
 projectsListNamespacePage:
   header: Espaços de nomes
   notIn: Não está em um projeto
@@ -849,7 +849,7 @@ containersPage:
     orchestrator: Instalar outro orquestrador
     kubernetesLink: Instalar Kubernetes
 clusterDashboard:
-  systemProject: Este é o projeto do sistema que possui todos os namespaces do sistema Kubernetes e {appName}. As alterações feitas nos recursos do projeto do sistema podem prejudicar o grupo.
+  systemProject: Este é o projeto do sistema que possui todos os namespaces do sistema Kubernetes e AKE. As alterações feitas nos recursos do projeto do sistema podem prejudicar o grupo.
   notActive: Este cluster está atualmente em <b>{state}</b>.
   notReady: Este cluster está atualmente <b>{state}</b>; áreas que interagem diretamente com ele não estarão disponíveis até que a API esteja pronta.
   used: Usado
@@ -1150,7 +1150,7 @@ time:
 haPage:
   header: Alta Disponibilidade(HA)
   setup:
-    prefix: "Vários recipientes de servidor podem ser implantados em diferentes servidores para que {appName} continue funcionando mesmo se um dos servidores falhar.  "
+    prefix: "Vários recipientes de servidor podem ser implantados em diferentes servidores para que AKE continue funcionando mesmo se um dos servidores falhar.  "
     link: Veja a documentação
     suffix: " para obter mais informações sobre a instalação e uso."
   table:
@@ -1302,10 +1302,10 @@ k8sPage:
       downloadText: |
         Em seguida <a href="{downloadUrl}" target="_blank">baixar</a> (se necessário) e execute <code>kubectl</code>
 loginPage:
-  greeting: "Olá!<br>Bem-vindo à {appName}"
-  insecure: "{appName} funciona apenas com uma conexão de <code>https: //</code>. Você deve:<br><br>Usar o suporte TLS integrado ao servidor ou <br><br> Fornecer sua própria terminação TLS na frente do recipiente."
-  githubMessage: "{appName} usar GitHub para gerenciar contas e equipes.  Clique no botão a seguir para entrar e dar-nos acesso somente leitura às suas informações básicas sobre a conta GitHub."
-  shibbolethMessage: "{appName} usa Conta Única para gerenciar contas.  Clique no botão abaixo para logar-se com a Conta Única configurada."
+  greeting: "Olá!<br>Bem-vindo à AKE"
+  insecure: "AKE funciona apenas com uma conexão de <code>https: //</code>. Você deve:<br><br>Usar o suporte TLS integrado ao servidor ou <br><br> Fornecer sua própria terminação TLS na frente do recipiente."
+  githubMessage: "AKE usar GitHub para gerenciar contas e equipes.  Clique no botão a seguir para entrar e dar-nos acesso somente leitura às suas informações básicas sobre a conta GitHub."
+  shibbolethMessage: "AKE usa Conta Única para gerenciar contas.  Clique no botão abaixo para logar-se com a Conta Única configurada."
   shibbolethError:
     401: "Não autorizado"
     500: "Erro interno do servidor"
@@ -1455,14 +1455,14 @@ servicePage:
     header: Workload & Sidecars
     helpBlock: Selecione o container principal ou um dos sidecars
 signupPage:
-  header: 'Inscreva-se para {appName}'
+  header: 'Inscreva-se para AKE'
   form:
     button: Registrar
     labels:
       loginUsername: Nome
       email: E-mail
   emailSuccess:
-    header: 'Bem vindo a {appName}'
+    header: 'Bem vindo a AKE'
     confirm:
       subtext: Confirme seu e-mail clicando no link de verificação que acabamos de enviar para sua caixa de entrada.
       resend: Reenviar email
@@ -1529,7 +1529,7 @@ newStack:
     uploadActionLabel: Ler a partir do Disco
     namePlaceholder: Nome do Arquivo
     valuePlaceholder: Conteúdo Do Arquivo
-    protipLabel: Suporta {appName} <code>compose.yml</code>, <code>docker-compose.yml</code> e arquivos de manifesto do Kubernetes
+    protipLabel: Suporta AKE <code>compose.yml</code>, <code>docker-compose.yml</code> e arquivos de manifesto do Kubernetes
   answers:
     label: Respostas (substituições de variáveis)
     addActionLabel: Adicionar Resposta
@@ -1708,7 +1708,7 @@ ldap:
   accessConfig:
     header: "1. configurar um servidor {providerName}"
     subtext1: "Digite o endereço, porta e protocolo para conectar ao seu servidor {providerName}.  <code>389</code> ié a porta padrão para inseguro, <code>636</code> para TLS."
-    subtext2: "{appName} precisa de uma conta de serviço que tenha acesso (somente leitura) a todos os domínios que será capaz de fazer login, para que possamos determinar quais grupos um usuário é membro de quando eles fazem um pedido com uma Chave de API."
+    subtext2: "AKE precisa de uma conta de serviço que tenha acesso (somente leitura) a todos os domínios que será capaz de fazer login, para que possamos determinar quais grupos um usuário é membro de quando eles fazem um pedido com uma Chave de API."
     port:
       labelText: Porta
       checkbox: TLS
@@ -2184,7 +2184,7 @@ formVolumes:
     prompt: Selecione um Contêiner...
 hostSettings:
   header: URL de Registro Host
-  subtext: Qual URL base do hosts devem ser usadas para conectar na API {appName}?
+  subtext: Qual URL base do hosts devem ser usadas para conectar na API AKE?
   hostUrl:
     local: "Endereço deste site:"
     new:
@@ -2192,7 +2192,7 @@ hostSettings:
       placeholder: "p.ex. http://exemplo.com:8080"
   helpText:
     static1: "Não incluir <code>/v1</code> ou qualquer outro caminho, mas se você está fazendo"
-    static2: "em frente de {appName}, certifique-se de usar <code>https://</code>."
+    static2: "em frente de AKE, certifique-se de usar <code>https://</code>."
     isRancher: '<a href="{docsBase}/installing-rancher/installing-server/basic-ssl-config/" target="_blank">Terminação SSL</a>'
     sslTerm: Terminação SSL
   notPublic:

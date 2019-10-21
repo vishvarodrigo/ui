@@ -191,7 +191,7 @@ accountsPage:
   modal:
     password: تغيير كلمة المرور
 appDetailPage:
-  header: "التطبيق: {appName}"
+  header: "التطبيق: AKE"
   endpoints:
     title: نقاط الدخول
     detail: 'نقاط الدخول العامة لهذا التطبيق'
@@ -345,8 +345,8 @@ authPage:
         labelText: حقل ال UID
         display: "حقل ال UID:"
       rancherApiHost:
-        labelText: "مضيف ال API {appName}"
-        display: "مضيف ال API {appName}:"
+        labelText: "مضيف ال API AKE"
+        display: "مضيف ال API AKE:"
       groups:
         labelText: حقل المجموعات
         display: "حقل المجموعات:"

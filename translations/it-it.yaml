@@ -187,7 +187,7 @@ accountsPage:
   modal:
     password: Cambia password
 appDetailPage:
-  header: "App: {appName}"
+  header: "App: AKE"
   endpoints:
     title: Endpoint
     detail: 'Endpoint pubblici di questa applicazione'
@@ -343,7 +343,7 @@ authPage:
           text: Autenticazione
       disableAccess:
         header: "Zona pericolosa&trade;"
-        warning: '<b class="text-danger">Cautela:</b> Disabilitare il controllo degli accessi darà il completo controllo su {appName} a chiunque possa visualizzare questa pagina o le rispettive API.'
+        warning: '<b class="text-danger">Cautela:</b> Disabilitare il controllo degli accessi darà il completo controllo su AKE a chiunque possa visualizzare questa pagina o le rispettive API.'
         disable: Disabilita il controllo di accesso
       groupsField: 'Gruppi:'
       displayName: 'Nome visualizzato:'
@@ -385,7 +385,7 @@ authPage:
           helpText: "Per modificare l'applicazione configurata di GitHub, disattivare il controllo di accesso qui sotto e quindi impostare di nuovo."
       disableAccess:
         header: "Zona pericolosa&trade;"
-        warning: '<b class="text-danger">Cautela:</b> Disabilitare il controllo degli accessi darà il completo controllo su {appName} a chiunque possa visualizzare questa pagina o le rispettive API.'
+        warning: '<b class="text-danger">Cautela:</b> Disabilitare il controllo degli accessi darà il completo controllo su AKE a chiunque possa visualizzare questa pagina o le rispettive API.'
         disable: Disabilita l'accesso Github
     notAuthenticated:
       header: "1. installazione di un'applicazione di GitHub"
@@ -397,14 +397,14 @@ authPage:
         li2:
           text: 'Clicca "Registra una nuova applicazione" e compila il modulo:'
           ul:
-            li1: '<b>Nome applicazione:</b> <span class="text-muted"> qualcosa che ti piace, per esempio il mio {appName}</span>'
+            li1: '<b>Nome applicazione:</b> <span class="text-muted"> qualcosa che ti piace, per esempio il mio AKE</span>'
             li2: 'URL della Home page'
             li3: '<b>Descrizione dell''applicazione:</b> <span class="text-muted"> qualsiasi cosa ti piace, opzionale</span>'
             li4: 'Autorizzazione URL di callback'
         li3:
           text: 'Fare clic su "Registro applicazione" '
       form:
-        header: '2. configurare {appName} per utilizzare l''applicazione per l''autenticazione'
+        header: '2. configurare AKE per utilizzare l''applicazione per l''autenticazione'
         subtext: 'Copiare ed incollare Client ID e Secret dall''angolo in alto a destra dell''applicazione appena creata.'
         clientId:
           labelText: Client ID
@@ -449,17 +449,17 @@ authPage:
       disabled: 'L''autenticazione locale non è configurata'
     subtext:
       enabled:
-        text: '{appName} è configurata per permettere l''acceso agli account in questo database locale.'
+        text: 'AKE è configurata per permettere l''acceso agli account in questo database locale.'
         linkText: Gestione account
-      disabled: '{appName} può essere configurata per restringere l''accesso ad una lista di account definiti nel database {appName}. Questo non è stato ancora configurato, quindi chiunque può raggiungere questa pagina (o le API) avendo il pieno controllo sul sistema.'
+      disabled: 'AKE può essere configurata per restringere l''accesso ad una lista di account definiti nel database AKE. Questo non è stato ancora configurato, quindi chiunque può raggiungere questa pagina (o le API) avendo il pieno controllo sul sistema.'
     accessEnabled:
       header: 'Zona pericolosa&trade;'
-      warning: '<b class="text-danger">Cautela:</b> Disabilitare il controllo degli accessi darà il completo controllo su {appName} a chiunque possa visualizzare questa pagina o le rispettive API.'
+      warning: '<b class="text-danger">Cautela:</b> Disabilitare il controllo degli accessi darà il completo controllo su AKE a chiunque possa visualizzare questa pagina o le rispettive API.'
       buttonText:
         prompt: Disabilita il controllo di accesso
     accessDisabled:
       header: 'Aggiungi un utente Amministratore'
-      helpText: 'Questo utente diventerà l''amministratore che ha pieno controllo sulla {appName}.'
+      helpText: 'Questo utente diventerà l''amministratore che ha pieno controllo sulla AKE.'
       form:
         login:
           labelText: Username d'accesso
@@ -799,7 +799,7 @@ time:
 haPage:
   header: Alta disponibilità
   setup:
-    prefix: "È possibile distribuire più contenitori di server su host diversi in modo che {appName} continui a essere eseguito anche se uno degli host ha esito negativo.  "
+    prefix: "È possibile distribuire più contenitori di server su host diversi in modo che AKE continui a essere eseguito anche se uno degli host ha esito negativo.  "
     link: Consulta documentazione
     suffix: " per informazioni su configurazione e utilizzo."
   table:
@@ -1024,14 +1024,14 @@ servicePage:
     tabHeader: Sidecars
     header: Carico di lavoro e sidecar
 signupPage:
-  header: 'Registrati per {appName}'
+  header: 'Registrati per AKE'
   form:
     button: Iscrizione
     labels:
       loginUsername: Nome
       email: Email
   emailSuccess:
-    header: 'Benvenuto su {appName}'
+    header: 'Benvenuto su AKE'
     confirm:
       subtext: Conferma la tua email facendo clic sul link di verifica che abbiamo appena inviato alla tua casella di posta.
       resend: Reinvia Email

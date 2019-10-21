@@ -181,7 +181,7 @@ accountsPage:
   modal:
     password: パスワードを変更
 appDetailPage:
-  header: "アプリケーション: {appName}"
+  header: "アプリケーション: AKE"
   endpoints:
     title: エンドポイント
     detail: 'このアプリケーションの公開エンドポイント'
@@ -345,8 +345,8 @@ authPage:
         labelText: UID フィールド
         display: "UID フィールド:"
       rancherApiHost:
-        labelText: "{appName} APIホスト"
-        display: "{appName} APIホスト:"
+        labelText: "AKE APIホスト"
+        display: "AKE APIホスト:"
       groups:
         labelText: グループ フィールド
         display: "グループ フィールド:"
@@ -377,7 +377,7 @@ authPage:
           text: 認証
       disableAccess:
         header: "Danger Zone&trade;"
-        warning: '<b class="text-danger">注意:</b> アクセスコントロールを無効化すると、このページや API にアクセスできる全ての人が {appName} 経由でフルコントロールするこ>とができます。'
+        warning: '<b class="text-danger">注意:</b> アクセスコントロールを無効化すると、このページや API にアクセスできる全ての人が AKE 経由でフルコントロールするこ>とができます。'
         disable: アクセスコントロールを無効化
       groupsField: 'グループ:'
       displayName: '表示名:'
@@ -419,7 +419,7 @@ authPage:
           helpText: "設定済み GitHub アプリケーションを変更するには以下のアクセスコントロールを無効化し、再度設定し直して下さい。"
       disableAccess:
         header: "Danger Zone&trade;"
-        warning: '<b class="text-danger">注意:</b> アクセスコントロールを無効化すると、このページや API にアクセスできる全ての人が {appName} 経由でフルコントロールすることができます。'
+        warning: '<b class="text-danger">注意:</b> アクセスコントロールを無効化すると、このページや API にアクセスできる全ての人が AKE 経由でフルコントロールすることができます。'
         disable: Github アクセスを無効化
     notAuthenticated:
       header: "1. GithHub アプリケーションをセットアップする"
@@ -431,14 +431,14 @@ authPage:
         li2:
           text: '"新規アプリケーションの登録" をクリックし、必要事項を入力してください:'
           ul:
-            li1: '<b>アプリケーション名:</b> <span class="text-muted">自由記載, e.g. My {appName}</span>'
+            li1: '<b>アプリケーション名:</b> <span class="text-muted">自由記載, e.g. My AKE</span>'
             li2: 'ホームページ URL'
             li3: '<b>アプリケーションの詳細情報:</b> <span class="text-muted">自由記載(オプション)</span>'
             li4: '認証コールバック URL'
         li3:
           text: '"アプリケーションを登録" をクリック'
       form:
-        header: '2. 認証にあなたのアプリケーションを利用するよう {appName} を設定'
+        header: '2. 認証にあなたのアプリケーションを利用するよう AKE を設定'
         subtext: '新しく作成したアプリケーションの右上からクライアント ID と秘密キーをコピー&ペーストします。'
         clientId:
           labelText: クライアント ID
@@ -509,18 +509,18 @@ authPage:
       disabled: 'ローカル認証は設定されていません'
     subtext:
       enabled:
-        text: '{appName} はローカルデータベースを利用したアクセス許可が設定されています。'
+        text: 'AKE はローカルデータベースを利用したアクセス許可が設定されています。'
         alwaysOn: 'ローカル認証は常に有効化されていますが追加で他の認証方法を選択することができます'
         linkText: アカウントを管理
-      disabled: '{appName} は {appName} データベースで定義されたいくつかのアカウントに対してアクセスを制限するよう設定できます。現在はこの設定がされていないため、このページ(または API)にアクセスできる全ての人がシステムを介してフルコントロールすることができます。'
+      disabled: 'AKE は AKE データベースで定義されたいくつかのアカウントに対してアクセスを制限するよう設定できます。現在はこの設定がされていないため、このページ(または API)にアクセスできる全ての人がシステムを介してフルコントロールすることができます。'
     accessEnabled:
       header: 'Danger Zone&trade;'
-      warning: '<b class="text-danger">注意:</b> アクセスコントロールを無効化すると、このページや API にアクセスできる全ての人が {appName} 経由でフルコントロールすることができます。'
+      warning: '<b class="text-danger">注意:</b> アクセスコントロールを無効化すると、このページや API にアクセスできる全ての人が AKE 経由でフルコントロールすることができます。'
       buttonText:
         prompt: アクセスコントロールを無効化
     accessDisabled:
       header: '1. 管理者ユーザーをセットアップする'
-      helpText: 'このユーザーは {appName} 上でのフルコントロール権限を持つ管理者になります。'
+      helpText: 'このユーザーは AKE 上でのフルコントロール権限を持つ管理者になります。'
       form:
         login:
           labelText: ログイン ユーザー名
@@ -944,7 +944,7 @@ time:
 haPage:
   header: 高可用性
   setup:
-    prefix: "ホストの障害時に {appName} が稼働し続けるよう複数のサーバーコンテナを異なるホストにデプロイ出来ます。  "
+    prefix: "ホストの障害時に AKE が稼働し続けるよう複数のサーバーコンテナを異なるホストにデプロイ出来ます。  "
     link: ドキュメントを参照してください
     suffix: "セットアップと使用方法についてご確認ください。"
   table:
@@ -1096,9 +1096,9 @@ k8sPage:
       downloadText: |
         次に、(必要なら) <a href="{downloadUrl}" target="_blank">ダウンロード</a>したのち、<code>kubectl</code> を実行します。
 loginPage:
-  greeting: "こんにちは！<br><span>{appName} へようこそ</span>"
-  githubMessage: "{appName} はアカウントやチームの管理に GitHub を利用しています。 ログインしてあなたの GitHub アカウント情報に読み込み権限でアクセスするために以下のボタンを押して下さい。"
-  shibbolethMessage: "{appName} はアカウントの管理にシボレスを利用しています。 設定済みのシボレス IDP にログインするには以下のボタンを押して下さい。"
+  greeting: "こんにちは！<br><span>AKE へようこそ</span>"
+  githubMessage: "AKE はアカウントやチームの管理に GitHub を利用しています。 ログインしてあなたの GitHub アカウント情報に読み込み権限でアクセスするために以下のボタンを押して下さい。"
+  shibbolethMessage: "AKE はアカウントの管理にシボレスを利用しています。 設定済みのシボレス IDP にログインするには以下のボタンを押して下さい。"
   shibbolethError:
     401: "認証に失敗しました"
     500: "サーバ内部エラー"
@@ -1247,14 +1247,14 @@ servicePage:
     header: ワークロード & サイドカー
     helpBlock: メインコンテナもしくはサイドカーを選択してください
 signupPage:
-  header: '{appName} にサインアップ'
+  header: 'AKE にサインアップ'
   form:
     button: 登録
     labels:
       loginUsername: ユーザー名
       email: E-mail アドレス
   emailSuccess:
-    header: '{appName} へようこそ'
+    header: 'AKE へようこそ'
     confirm:
       subtext: 送信済みのメールから確認用リンクをクリックしてください
       resend: メールを再送信
@@ -1321,7 +1321,7 @@ newStack:
     uploadActionLabel: ディスクから読み込み
     namePlaceholder: ファイル名
     valuePlaceholder: ファイルの内容
-    protipLabel: '{appName} <code>compose.yml</code>, <code>docker-compose.yml</code> または Kubernetes マニフェストファイルがサポートされます'
+    protipLabel: 'AKE <code>compose.yml</code>, <code>docker-compose.yml</code> または Kubernetes マニフェストファイルがサポートされます'
   answers:
     label: 回答(変数置換を含む)
     addActionLabel: 回答を追加
@@ -1483,7 +1483,7 @@ ldap:
   accessConfig:
     header: "1. {providerName} サーバーを設定"
     subtext1: "あなたの {providerName} サーバーに接続するため、アドレス、ポート、プロトコルを入力してください。通常は <code>389</code> 番ポートが利用され、<code>636</code>はTLSに利用されます。"
-    subtext2: "{appName} はユーザーがどのグループに所属しているか、いつ API キーでリクエストを発行したかなどを特定し、ログイン処理を実行するために全てのドメインに対して (read-only) アクセスが可能なサービスアカウントを必要とします。"
+    subtext2: "AKE はユーザーがどのグループに所属しているか、いつ API キーでリクエストを発行したかなどを特定し、ログイン処理を実行するために全てのドメインに対して (read-only) アクセスが可能なサービスアカウントを必要とします。"
     port:
       labelText: ポート
       checkbox: TLS
@@ -1615,7 +1615,7 @@ catalogSettings:
   globalCatalog: グローバル
   library:
     label: ライブラリ
-    detail: 公式に管理されているアプリケーション定義のリポジトリであり、{appName} によりメンテナンスされています。
+    detail: 公式に管理されているアプリケーション定義のリポジトリであり、AKE によりメンテナンスされています。
   helm:
     stable:
       label: 安定版 Helm
@@ -1625,7 +1625,7 @@ catalogSettings:
       detail: まだ安定していないベータ版アプリケーション定義のリポジトリです。
   certified:
     header:
-      rancher: "{appName} 認証済みライブラリ"
+      rancher: "AKE 認証済みライブラリ"
       pl: 認証済みライブラリ
     detail:
       rancher: テンプレートは Kubernetes オーケストレーションサポートのような Rancher のコアとなる機能に必要となり、Rancher Labs によりメンテナンス、サポートされます。
@@ -1871,7 +1871,7 @@ clusterNew:
       private:
         label: プライベート IP
         placeholder: '例: 1.2.3.4'
-    label: '{appName} Kubernetes Engine'
+    label: 'AKE Kubernetes Engine'
     shortLabel: カスタム
     customize:
       label: クラスターオプション
@@ -1989,8 +1989,8 @@ clusterNew:
     label: インポート
     shortLabel: インポート
     command:
-      instructions: "{appName} にインポートするには以下の kubectl コマンドを既存の Kubernetes 1.8.x クラスター上で実行してください:"
-      instructionsInsecure: "'certificate signed by unknown authority' のようなエラーが発生した場合はあなたの {appName} が公式の CA から署名された SSL 証明書を利用していないことが原因です。証明書チェック>を回避するには以下のコマンドを実行してください。:"
+      instructions: "AKE にインポートするには以下の kubectl コマンドを既存の Kubernetes 1.8.x クラスター上で実行してください:"
+      instructionsInsecure: "'certificate signed by unknown authority' のようなエラーが発生した場合はあなたの AKE が公式の CA から署名された SSL 証明書を利用していないことが原因です。証明書チェック>を回避するには以下のコマンドを実行してください。:"
 conditionSections:
   title: コンディションはありません
   detail: '{resourceType} の現在のコンディションです'
@@ -2013,7 +2013,7 @@ resourceEventList:
   noMatch: 検索条件に一致するイベントはありません
 confirmDelete:
   titleWithoutResourceType: '本当に削除してもよろしいですか?'
-  environmentNote: 'ノート: このプロジェクト内にある {appName} により作られた名前空間を含むの全てのリソースは完全に削除されます'
+  environmentNote: 'ノート: このプロジェクト内にある AKE により作られた名前空間を含むの全てのリソースは完全に削除されます'
   clusterNote: '注意: クラウドプロバイダーにより作成されたボリューム、ロードバランサー、ネットワークなどの関連リソースは自動的には削除されません。'
   protip: 'ProTip: この確認画面を飛ばす場合は削除ボタンのクリック時に {key} キーを長押ししてください。'
   confirmAction: 削除
@@ -2706,7 +2706,7 @@ cruStorageClass:
       placeholder: "例: replicate:3"
 dangerZone:
   header: 拡張設定
-  subtext: "一般的なユーザーの場合、これらを変更する必要はありません。間違った値を指定するとあなたの {appName} が壊れる可能性がありますので、慎重に進めてください。<br/>既定の値から変更された設定値は<b>太字</b>で表示されます。"
+  subtext: "一般的なユーザーの場合、これらを変更する必要はありません。間違った値を指定するとあなたの AKE が壊れる可能性がありますので、慎重に進めてください。<br/>既定の値から変更された設定値は<b>太字</b>で表示されます。"
   showLabel: 私は拡張設定を変更することで問題が生じる可能性があると理解しています。
   description:
     'cacerts': "サーバー証明書を検証するために必要な CA証明書"
@@ -2880,9 +2880,9 @@ formatIp:
   noIp: None
 formBalancerConfig:
   title: カスタムの設定ファイル
-  detail: '{appName} によって生成された設定より上位に適用するためのカスタム設定ファイルを指定してください'
+  detail: 'AKE によって生成された設定より上位に適用するためのカスタム設定ファイルを指定してください'
   custom: |
-    ファイルに指定可能なオプションの詳細は <a href="https://cbonte.github.io/haproxy-dconv/1.6/configuration.html" target="_blank" rel="nofollow noopener noreferrer">haproxy ドキュメント</a> を参照してください。ターゲットコンテナの IP アドレスを含む <code>backend</code> や関連する行を上書きする際は <code>$IP</code> と指定することで {appName} が適切な行を生成します。
+    ファイルに指定可能なオプションの詳細は <a href="https://cbonte.github.io/haproxy-dconv/1.6/configuration.html" target="_blank" rel="nofollow noopener noreferrer">haproxy ドキュメント</a> を参照してください。ターゲットコンテナの IP アドレスを含む <code>backend</code> や関連する行を上書きする際は <code>$IP</code> と指定することで AKE が適切な行を生成します。
   config:
     prompt: カスタムされた haproxy.cfg の内容
 formNodeAffinity:
@@ -3160,7 +3160,7 @@ formEnvVar:
     value: 値
 formGlobalRoles:
   title: グローバル権限
-  description: ユーザーが {appName} 環境全体を管理する際に必要なアクセス権を制御します
+  description: ユーザーが AKE 環境全体を管理する際に必要なアクセス権を制御します
   mode:
     admin:
       label: 管理者
@@ -3896,7 +3896,7 @@ formBasicPodSecurityPolicy:
     disable: "いいえ"
 hostSettings:
   header: ホスト登録 URL
-  subtext: '{appName} API に接続するための URL は何にしますか?'
+  subtext: 'AKE API に接続するための URL は何にしますか?'
   hostUrl:
     local: "サイトのアドレス:"
     new:
@@ -3904,7 +3904,7 @@ hostSettings:
       placeholder: "例: http://example.com:8080"
   helpText:
     static1: "<code>/v1</code> などのパスは含めないで下さい。もし、"
-    static2: "を {appName} の前段で行う場合は <code>https://</code> を指定することに注意してください。"
+    static2: "を AKE の前段で行う場合は <code>https://</code> を指定することに注意してください。"
     isRancher: '<a href="{docsBase}/installing-rancher/installing-server/basic-ssl-config/" target="_blank">SSL 終端処理</a>'
     sslTerm: SSL 終端処理
   notPublic:
@@ -3967,6 +3967,154 @@ loginGithub:
   buttonText: GitHub でログイン
 loginAzure:
   buttonText: Azure ADでログイン
+
+loggingPage:
+  targetNav:
+    experimental: Experimental
+    tips:
+      caseA: Logging is disabled in the current {pageScope}.
+      caseB: The current logging target is <code class="text-capitalize">{currentTarget}</code>, Click the Save button below will disable logging in current {pageScope}.
+      caseC: The current logging target is <code class="text-capitalize">{currentTarget}</code>,
+      caseD: click the Save button below to set <span class="text-info text-capitalize">{targetType}</span> as the logging target.
+      caseE: click the Save button below to update the <span class="text-info text-capitalize">{targetType}</span> configuration.
+      caseF: No logging target, click the Save button below to set <code class="text-capitalize">{targetType}</code> as the logging target.
+  targetTypes:
+    embedded: Embedded
+    elasticsearch: Elasticsearch
+    splunk: Splunk
+    kafka: Kafka
+    syslog: syslog
+    disable: None
+  endpoint: Endpoint
+  endpointPlaceholder: 'e.g. https://192.168.1.10:9200'
+  logging: Logging
+  clusterHeader: Cluster Logging
+  projectHeader: Project Logging
+  helpText:
+    cluster: We will collect the standard output and standard error for each container, the log files which under path<code> /var/log/containers/ </code>on each host. The log will be shipped to the target you choose below.
+    clusterTarget: The cluster logging target is <code class="text-capitalize">{clusterTargetType}</code>. If project logging is enabled, logs will be shipped to both cluster target and project logging target.
+    noClusterTarget: Logging is disabled at current cluster.
+  tags:
+    keyPlaceholder: e.g. foo
+    valuePlaceholder: e.g. bar
+    addActionLabel: Add Field
+  keyValueForm:
+    keyPlaceholder: e.g. 192.168.1.10
+  targetKafka:
+    addActionLabel: Add Broker
+    host: Host
+    port: Port
+  embedded:
+    esDeployState:
+      message:
+        pending: Elasticsearch deploying in progress
+        failed: Failed to deploy Elasticsearch
+        success: 'Elascticsearch Endpoint:'
+    kibanaDeployState:
+      message:
+        pending: Kibana deploying in progress
+        failed: Failed to deploy Kibana
+        success: 'Kibana endpoint:'
+    header: Embedded Elasticsearch Configuration
+    failed: Failed
+    pending: Deploying
+    helpText:
+      persistantStorage: Embedded Elasticsearch is experimental, no persistent storage will be provided.
+      requirements: The embedded deployment includes Elasticsearch and Kibana. Elasticsearch requests at least 1 CPU and 500M MEM available on the node it is deployed.
+      esEndpoint: 'Elascticsearch Endpoint: <a href="http://47.88.57.141:30022" target="_blank">http://47.88.57.141:30022</a>'
+      kibanaEndpoint: 'Kibana Endpoint: <a href="http://47.88.57.141:30024" target="_blank">http://47.88.57.141:30024</a>'
+    cpuRequests:
+      label: CPU Requests (Core)
+      placeholder: e.g. 1
+    cpuLimits:
+      label: CPU Limits (Core)
+      placeholder: e.g. 4
+    memRequests:
+      label: Memory Requests (M)
+      placeholder: e.g. 500
+    memLimits:
+      label: Memory Limits (M)
+      placeholder: e.g. 2000
+    resouceRequestsAndLimits: CPU and Memory
+
+    indexPatterns:
+      header: Index Patterns
+      helpText: Index patterns are used to generate Elacticsearch index
+      prefix: Prefix
+      prefixPlaceholder: e.g. logstash
+      dateFormat: 'Date Format:'
+    generatedIndex: 'The generated index will be: <code class="text-italic">{esIndex}</code>, by default the index patterns is $\{clusterName\}-$\{dateFormat\}'
+  logPreview:
+    header: Log Format Preview
+  additional:
+    header: Additional Logging Configuration
+    fields:
+      header: Custom Log Fields
+      helpText: You can add custom fields as key/value pairs for better filtering.
+    flushInterval:
+      header: Flush Interval
+      label: Flush Interval
+      placeholder: e.g. 1
+      sec: sec
+      helpText: How often buffered logs would be flushed.
+
+  elasticsearch:
+    header: Elasticsearch Configuration
+    endpointHelpText: Copy your endpoint from Elastic Cloud, or input the reachable endpoint of your self-hosted Elacticsearch.
+    xpack:
+      header: X-Pack Security
+      headerOptional: (optional)
+      helpText: If your Elasticsearch use X-Pack built-in native authentication features, put your username and password below.
+      username: Username
+      usernamePlaceholder: e.g. John
+      password: Password
+      passwordPlaceholder: Your Password
+    indexPatterns:
+      header: Index Patterns
+      helpText: Index patterns are used to generate Elacticsearch index
+      prefix: Prefix
+      prefixPlaceholder: e.g. logstash
+      dateFormat: 'Date Format:'
+    generatedIndex: 'The generated index will be: <code class="text-italic">{esIndex}</code>, by default the index patterns is {indexFormat}'
+  splunk:
+    header: Splunk HTTP Event Collector Configuration
+    helpText: 'You can find instructions on how to configre Splunk HEC(HTTP Event Collector) <a href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Data/UsetheHTTPEventCollector" target="_blank">here</a>.'
+    token: Token
+    tokenPlaceholder: Your Token
+    tokenHelpText: 'Tokens are entities that let logging agents and HTTP clients connect to the HEC input. <a href="http://docs.splunk.com/Documentation/Splunk/7.0.0/Data/UsetheHTTPEventCollector#Configure_HTTP_Event_Collector_on_Splunk_Enterprise" target="_blank">Detail</a>'
+    source: Source
+    sourcePlaceholder: e.g. fluentd
+    sourceHelpText: 'A default field that identifies the source of an event, that is, where the event originated. <a href="https://docs.splunk.com/Splexicon:Source" target="_blank">Detail</a>'
+  kafka:
+    header: Kafka Configuration
+    endpointType: Endpoint Type
+    zookeeper: Zookeeper
+    broker: Broker
+    brokerTypeHelpText: Use either Zookeeper or Broker list as the Kafka connection entrypoint.
+    zookeeperHelpText: Zookeeper is for building coordination, configuration management, leader detection, detecting node update in kafka cluster.
+    brokerHelpText: A Kafka cluster consists of one or more Brokers, config the host and port for each Broker.
+    addEndpoint: Add Endpoint
+    topic: Topic
+    topicPlaceholder: e.g. message
+    topicHelpText: Logs will be send to this topic
+  syslog:
+    endpointPlaceholder: 'e.g. 192.168.1.10:514'
+    header: Syslog Configuration
+    endpointHelpText: Input your syslog server endpoint herecluster.
+    program: Program
+    programPlaceholder: e.g. MyProgram
+    programHelpText: The program name of the log.
+    severityHelpText: '<p class="text-info text-small">The severity of logs, list of severities definition could be found here <a href="https://tools.ietf.org/html/rfc5424#section-6.2.1" target="_blank">here.</a></p>'
+    severities:
+      emergency: Emergency
+      alert: Alert
+      critical: Ctitical
+      error: Error
+      warning: Warning
+      notice: Notice
+      info: Info
+      debug: Debug
+
 loginUserPass:
   local: ローカルユーザーを使用
   provider: "{kind}"
@@ -4127,7 +4275,7 @@ modalEditSetting:
     label: デフォルトにリセット
 modalEditPassword:
   firstLogin:
-    title: '{appName} へようこそ'
+    title: 'AKE へようこそ'
     help: 最初のステップはデフォルトの <code>admin</code> ユーザーに対し強力なパスワードを設定することです
     actionButton: 続ける
   edit:
@@ -4142,7 +4290,7 @@ modalEditPassword:
     generate: 'ランダムに生成されたパスワードを使う:'
     manual: '手動でパスワードを設定する:'
 modalFeedback:
-  header: '{appName} へようこそ!'
+  header: 'AKE へようこそ!'
   subtitle: "開始する前にあなたのことについて少し教えてください..."
   send: はじめに
 modalHostEvacuate:
@@ -4183,7 +4331,7 @@ modalRollbackService:
   difference:
     label: 差分
 modalRollbackApp:
-  title: '"{appName}" をロールバック'
+  title: '"AKE" をロールバック'
   action: ロールバック
   current:
     label: 現在のリビジョン
@@ -4212,7 +4360,7 @@ modalYaml:
     edit: 'YAML を編集: {name}'
     view: 'YAML を表示: {name}'
 modalWelcome:
-  header: '{appName} へようこそ!'
+  header: 'AKE へようこそ!'
   closeModal: 完了!
 namespaceGroup:
   label: "名前空間: {name}"
@@ -4347,7 +4495,7 @@ nodeDriver:
     vmwarevsphere: vSphere
     zstack: ZStack
   driverOptions: "{driver} オプション"
-  templateOptions: "{appName} テンプレート"
+  templateOptions: "AKE テンプレート"
   amazoneks:
     access:
       next: "次へ: サービスロールの選択"
@@ -4428,8 +4576,8 @@ nodeDriver:
       link: 詳細を見る
       text: 公開されるポート番号について
     needs:
-      label: "{appName} が正常に機能するためにはセキュリティグループで以下のトラフィックを許可する必要があります:"
-      item1: '{appName} サーバーから <code>TCP 22</code> 版ポート<span class="text-muted">(Docker を SSH 経由でインストール,設定するため)</span>"'
+      label: "AKE が正常に機能するためにはセキュリティグループで以下のトラフィックを許可する必要があります:"
+      item1: 'AKE サーバーから <code>TCP 22</code> 版ポート<span class="text-muted">(Docker を SSH 経由でインストール,設定するため)</span>"'
       item2: 他のホストへ、または他のホストからの <code>UDP 500</code> 番ポートと <code>4500</code> 番ポート<span class="text-muted">(IPsec ネットワークのため)</span></li>
       item3: これらのルールは自動的に追加 <b>されません</b>
     instanceType:
@@ -4522,8 +4670,8 @@ nodeDriver:
       link: 詳細を見る
       text: 公開されるポート番号について
     needs:
-      label: "{appName} が正常に機能するためにはセキュリティグループで以下のトラフィックを許可する必要があります:"
-      item1: '{appName} サーバーから <code>TCP 22</code> 版ポート<span class="text-muted">(Docker を SSH 経由でインストール,設定するため)</span>"'
+      label: "AKE が正常に機能するためにはセキュリティグループで以下のトラフィックを許可する必要があります:"
+      item1: 'AKE サーバーから <code>TCP 22</code> 版ポート<span class="text-muted">(Docker を SSH 経由でインストール,設定するため)</span>"'
       item2: 他のホストへ、または他のホストからの <code>UDP 500</code> 番ポートと <code>4500</code> 番ポート<span class="text-muted">(IPsec ネットワークのため)</span></li>
       item3: これらのルールは自動的に追加 <b>されません</b>
     selectSecurityGroupAction: "次へ: インスタンスオプションの設定"
@@ -4818,7 +4966,7 @@ nodeDriver:
       sshPasswordLengthNotValid: SSHパスワードの長さは8〜30でなければなりません。
       sshPasswordInvalidCharacter: SSHパスワードに無効な文字が含まれています。
       sshPasswordFormatError: "SSHパスワードには、次の4種類の文字のうち3つ以上の文字を含める必要があります: 大文字、小文字、数字、特殊文字"
-      nameNotValidForApp: この名前は、{appName} のホスト名規約により無効です
+      nameNotValidForApp: この名前は、AKE のホスト名規約により無効です
   zstack:
     access:
       title: 1. アカウントアクセス
@@ -5122,12 +5270,12 @@ schedulingRuleRow:
 serverUrl:
   header:
     label: Rancher サーバー URL
-    detail: "どのような URL をこの {appName} サーバーに利用しますか? クラスター内の全てのノードはこの URL に通信可能である必要があります。"
+    detail: "どのような URL をこの AKE サーバーに利用しますか? クラスター内の全てのノードはこの URL に通信可能である必要があります。"
   button:
     save: URL を保存する
 siteAccess:
   header: サイトアクセス
-  helpText: "誰がログインし {appName} を利用できるか設定してください"
+  helpText: "誰がログインし AKE を利用できるか設定してください"
   unrestricted: "全ての有効な {individuals} を許可"
   restricted: "クラスターのメンバーと認証済み {individuals}、{collection} を許可"
   required: "認証済み {individuals} と {collection} のみに制限"
@@ -5157,7 +5305,7 @@ tableCountSelect:
 telemetryOpt:
   header: 統計情報
   subtext: |
-    Rancher Labs では {appName} のインストール構成に関する匿名の情報を収集したいと思います<br/>。特定のリソース名、IP アドレス、その他識別情報などは収集されません<br/>。収集された情報はどのようにユーザーが Rancher を利用しているかを理解し、将来の開発における優先度を決めるために利用されます。
+    Rancher Labs では AKE のインストール構成に関する匿名の情報を収集したいと思います<br/>。特定のリソース名、IP アドレス、その他識別情報などは収集されません<br/>。収集された情報はどのようにユーザーが Rancher を利用しているかを理解し、将来の開発における優先度を決めるために利用されます。
   learnMore:
     label: 詳細を見る
   label: 匿名の統計情報の収集を許可する

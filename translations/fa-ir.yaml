@@ -192,7 +192,7 @@ authPage:
           helpText: "برای تغییر برنامه GitHub, دسترسی کنترل زیر را غیر فعال کرده و دوباره تنظیم کنید."
       disableAccess:
         header: "محدوده خطر&trade;"
-        warning: '<b class="text-danger">هشدار:</b> غیر فعال سازی کنترل دسترسی به هر کاربری در {appName} اجازه می دهد به این صفحه دسترسی داشته باشد.'
+        warning: '<b class="text-danger">هشدار:</b> غیر فعال سازی کنترل دسترسی به هر کاربری در AKE اجازه می دهد به این صفحه دسترسی داشته باشد.'
     notAuthenticated:
       header: "1. تنظیم یک برنامه GitHub"
       ul:
@@ -203,13 +203,13 @@ authPage:
         li2:
           text: ' "Register new application" را انتخاب و فرم را پر کنید:'
           ul:
-            li1: '<b>نام Application :</b> <span class="text-muted">Anything you like, مثال. My {appName}</span>'
+            li1: '<b>نام Application :</b> <span class="text-muted">Anything you like, مثال. My AKE</span>'
             li2: 'آدرس صفحه اصلی'
             li3: '<b>توضیحات Application:</b> <span class="text-muted">پر کردن این گزینه دلخواه است</span>'
         li3:
           text: '"ثبت Application" را انتخاب کنید '
       form:
-        header: '2. تنظیم {appName} برای استفاده از اپلیکیشن شما برای اهراز هویت'
+        header: '2. تنظیم AKE برای استفاده از اپلیکیشن شما برای اهراز هویت'
         subtext: 'Client ID و Secret را از قسمت بالا-سمت راست کپی و پیست کرده.'
         clientId:
           labelText: شناسه کلاینت
@@ -241,15 +241,15 @@ authPage:
     subtext:
       enabled:
         linkText: مدیریت حساب ها
-      disabled: '{appName} می تواند تنظیم شود تا دسترسی به برخی حساب ها که در دیتابیس تعریف شده اند را محدود کند. این کار هنوز انجام نشده، بنابراین هر شخصی با دسترسی به این صفحه،  به سیستم کنترل کامل دارد.'
+      disabled: 'AKE می تواند تنظیم شود تا دسترسی به برخی حساب ها که در دیتابیس تعریف شده اند را محدود کند. این کار هنوز انجام نشده، بنابراین هر شخصی با دسترسی به این صفحه،  به سیستم کنترل کامل دارد.'
     accessEnabled:
       header: 'خطر&trade;'
-      warning: '<b class="text-danger">هشدار:</b> غیر فعال سازی کنترل دسترسی دسترسی کامل به {appName} را به هر شخصی که به این صفحه دسترسی پیدا کند می دهد'
+      warning: '<b class="text-danger">هشدار:</b> غیر فعال سازی کنترل دسترسی دسترسی کامل به AKE را به هر شخصی که به این صفحه دسترسی پیدا کند می دهد'
       buttonText:
         prompt: غیر فعال سازی کنترل دسترسی
     accessDisabled:
       header: '1. ایجاد کاربر ادمین'
-      helpText: 'این کاربر در {appName} کنترل کامل خواهد داشت.'
+      helpText: 'این کاربر در AKE کنترل کامل خواهد داشت.'
       form:
         login:
           labelText: نام کاربری برای ورود
@@ -326,8 +326,8 @@ hostsPage:
         body:
           noData: این هاست هیچ volumes ندارد.
 loginPage:
-  githubMessage: "{appName} از GitHub برای مدیریت حساب ها و تیم ها استفاده می کند.  دکمه زیر را فشار دهید و وارد شوید و به ما دسترسی خواندن اطلاعات اولیه خساب GitHub تان را بدهید."
-  shibbolethMessage: "{appName} از Shibboleth  برای مدیریت حساب ها استفاده می کند. برای ورود به Shibboleth IDP بر روی دکمه زیر کلیک کنید."
+  githubMessage: "AKE از GitHub برای مدیریت حساب ها و تیم ها استفاده می کند.  دکمه زیر را فشار دهید و وارد شوید و به ما دسترسی خواندن اطلاعات اولیه خساب GitHub تان را بدهید."
+  shibbolethMessage: "AKE از Shibboleth  برای مدیریت حساب ها استفاده می کند. برای ورود به Shibboleth IDP بر روی دکمه زیر کلیک کنید."
   shibbolethError:
     401: "Unauthorized"
     500: "Internal Server Error"
@@ -693,7 +693,7 @@ modalProcessError:
   cause: "علت:"
   close: بستن
 modalWelcome:
-  header: به {appName} خوش آمدید!
+  header: به AKE خوش آمدید!
   closeModal: بستن
 newCatalog:
   catalog: "کاتالوگ:"

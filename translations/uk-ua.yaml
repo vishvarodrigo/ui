@@ -188,7 +188,7 @@ accountsPage:
   modal:
     password: Змінити пароль
 appDetailPage:
-  header: "Додаток: {appName}"
+  header: "Додаток: AKE"
   endpoints:
     title: Кінцеві точки
     detail: 'Загальнодоступні кінцеві точки цього додатка'
@@ -331,7 +331,7 @@ authPage:
         labelText: Поле UID
         display: "Поле UID:"
       rancherApiHost:
-        labelText: "{appName} API хоста"
+        labelText: "AKE API хоста"
       groups:
         labelText: Групи полів
         display: "Групи полів:"
@@ -366,7 +366,7 @@ authPage:
           text: Авторизація
       disableAccess:
         header: "Зона Ризику&trade;"
-        warning: '<B class = "text-danger"> Увага: </ b> Відключення контролю доступу надасть повний доступ до Системи {appName} будь-кому, хто може зайти на цю сторінку або достукатися до API. Ми попереджали.'
+        warning: '<B class = "text-danger"> Увага: </ b> Відключення контролю доступу надасть повний доступ до Системи AKE будь-кому, хто може зайти на цю сторінку або достукатися до API. Ми попереджали.'
         disable: Вимкнути контроль доступу
       groupsField: 'Групи:'
       displayName: 'Відображуване ім''я:'
@@ -408,7 +408,7 @@ authPage:
           helpText: "Щоб переналаштувати GitHub інтеграцію - відключіть контроль доступу трохи нижче і налаштуйте його знову."
       disableAccess:
         header: "Зона Ризику&trade;"
-        warning: '<B class = "text-danger"> Увага: </ b> Відключення контролю доступу надасть повний доступ до Системи {appName} будь-кому, хто може зайти на цю сторінку або достукатися до API. Ми попереджали.'
+        warning: '<B class = "text-danger"> Увага: </ b> Відключення контролю доступу надасть повний доступ до Системи AKE будь-кому, хто може зайти на цю сторінку або достукатися до API. Ми попереджали.'
         disable: Вимкнути доступ Github
     notAuthenticated:
       header: "1. Налаштуйте GitHub Додаток"
@@ -420,14 +420,14 @@ authPage:
         li2:
           text: 'Натисніть "Register new application" і заповніть форму:'
           ul:
-            li1: '<b>Application name:</b> <span class="text-muted"> Що завгодно, напр. My {appName}</span>'
+            li1: '<b>Application name:</b> <span class="text-muted"> Що завгодно, напр. My AKE</span>'
             li2: 'URL домашньої сторінки'
             li3: '<b>Application description:</b> <span class="text-muted">Що завгодно, можете залишити порожнім</span>'
             li4: 'Авторизація URL зворотного виклику'
         li3:
           text: 'Натисніть "Register Application"'
       form:
-        header: '2. настроїти {appName}, щоб використовувати ваші додатки для автентифікації'
+        header: '2. настроїти AKE, щоб використовувати ваші додатки для автентифікації'
         subtext: 'Скопіюйте Client ID і Secret з верхнього правого кута сторінки Вашого новоствореного Додатку.'
         clientId:
           labelText: ID Клієнта
@@ -485,17 +485,17 @@ authPage:
       disabled: 'Вбудована Авторизація не налаштована'
     subtext:
       enabled:
-        text: 'Система {appName} налаштована надавати доступ до акаунтів зі своєї власної бази даних.'
+        text: 'Система AKE налаштована надавати доступ до акаунтів зі своєї власної бази даних.'
         linkText: Керування обліковими записами
-      disabled: 'Система {appName} може бути налаштована надавати доступ набору облікових записів, визначеним у Azure AD. Прямо зараз це не налаштовано, так що всі, хто можуть зайти на цю сторінку (або достукатися до API) мають повний контроль над системою.'
+      disabled: 'Система AKE може бути налаштована надавати доступ набору облікових записів, визначеним у Azure AD. Прямо зараз це не налаштовано, так що всі, хто можуть зайти на цю сторінку (або достукатися до API) мають повний контроль над системою.'
     accessEnabled:
       header: 'Зона Ризику&trade;'
-      warning: '<B class = "text-danger"> Увага: </ b> Відключення контролю доступу надасть повний доступ до Системи {appName} будь-кому, хто може зайти на цю сторінку або достукатися до API. Ми попереджали.'
+      warning: '<B class = "text-danger"> Увага: </ b> Відключення контролю доступу надасть повний доступ до Системи AKE будь-кому, хто може зайти на цю сторінку або достукатися до API. Ми попереджали.'
       buttonText:
         prompt: Вимкнути контроль доступу
     accessDisabled:
       header: '1. Налаштування користувача з правами адміністратора'
-      helpText: 'Цей користувач буде адміном з повним доступом до Системи {appName}.'
+      helpText: 'Цей користувач буде адміном з повним доступом до Системи AKE.'
       form:
         login:
           labelText: Логін
@@ -718,7 +718,7 @@ containersPage:
     containerLink: Додати контейнер
     kubernetesLink: Встановити Kubernetes
 clusterDashboard:
-  systemProject: Це проект, який має системні простори імен Kubernetes і {appName}. Зміни, внесені до ресурсів у системному проекта, можуть пошкодити кластер.
+  systemProject: Це проект, який має системні простори імен Kubernetes і AKE. Зміни, внесені до ресурсів у системному проекта, можуть пошкодити кластер.
   used: Використовується
 metricsAction:
   grafana:
@@ -914,7 +914,7 @@ time:
 haPage:
   header: Висока доступність
   setup:
-    prefix: "Кілька серверних контейнерів можуть бути розгорнуті на різних хостах, так що {appName} продовжує працювати, навіть якщо один з хостів не доступний.  "
+    prefix: "Кілька серверних контейнерів можуть бути розгорнуті на різних хостах, так що AKE продовжує працювати, навіть якщо один з хостів не доступний.  "
     link: Документація
     suffix: " для отримання інформації про встановлення та використання."
   table:
@@ -1048,8 +1048,8 @@ k8sPage:
       helpText: |
         Помістіть це в <code>~/.kube/config</code>:
 loginPage:
-  greeting: "Привіт! <br><span>Ласкаво просимо в {appName}</span>"
-  githubMessage: "Система {appName} використовує GitHub для управління користувачами і командами. Натисніть на кнопку трохи нижче, щоб увійти в систему і надати нам права на читання базової інформації вашого облікового запису на GitHub."
+  greeting: "Привіт! <br><span>Ласкаво просимо в AKE</span>"
+  githubMessage: "Система AKE використовує GitHub для управління користувачами і командами. Натисніть на кнопку трохи нижче, щоб увійти в систему і надати нам права на читання базової інформації вашого облікового запису на GitHub."
   shibbolethError:
     401: "Помилка Авторизації"
     500: "Внутрішня помилка сервера"
@@ -1176,14 +1176,14 @@ servicePage:
     networkdriverservice: Мережеваий сервіс
     storagedriverservice: Сервіс сховищ
 signupPage:
-  header: 'Реєстрація на {appName}'
+  header: 'Реєстрація на AKE'
   form:
     button: Реєстрація
     labels:
       loginUsername: Ім'я
       email: Ел. пошта
   emailSuccess:
-    header: 'Ласкаво просимо в {appName}'
+    header: 'Ласкаво просимо в AKE'
     confirm:
       subtext: Підтвердіть ваш email, перейшовши по щойно відправленої вам силці.
       resend: Повторно надіслати лист
@@ -1487,7 +1487,7 @@ catalogSettings:
     label: Бібліотека
   certified:
     header:
-      rancher: "{appName}, сертифікована бібліотека"
+      rancher: "AKE, сертифікована бібліотека"
       pl: Сертифікована бібліотека
     detail:
       pl: Офіційно підтримувані шаблони, необхідні для основних функцій, таких як Kubernetes.
@@ -3187,7 +3187,7 @@ formBasicPodSecurityPolicy:
     disable: "Ні"
 hostSettings:
   header: Хост реєстрації URL
-  subtext: Якій URL слід використовувати для підключення до {appName} API?
+  subtext: Якій URL слід використовувати для підключення до AKE API?
   hostUrl:
     local: "Адреса цього сайту:"
     new:
@@ -3375,7 +3375,7 @@ modalEditSetting:
     label: Відновити Значення за Замовчуванням
 modalEditPassword:
   firstLogin:
-    title: Ласкаво просимо в {appName}
+    title: Ласкаво просимо в AKE
     actionButton: Далі
   edit:
     title: Змінити пароль
@@ -3386,7 +3386,7 @@ modalEditPassword:
   mismatch: Паролі не співпадають
   actionButton: Замінити
 modalFeedback:
-  header: Ласкаво просимо в {appName}!
+  header: Ласкаво просимо в AKE!
   subtitle: "Перед тим, як приступити до роботи, розкажіть, будь ласка, трохи про себе..."
   send: Розпочати
 modalHostEvacuate:
@@ -3423,7 +3423,7 @@ modalYaml:
     new: Імпорт {type} YAML
     edit: 'Редагувати YAML: {name}'
 modalWelcome:
-  header: Ласкаво просимо в {appName}!
+  header: Ласкаво просимо в AKE!
   closeModal: Зрозуміло
 namespaceGroup:
   label: "Простір імен: {name}"

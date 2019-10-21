@@ -187,7 +187,7 @@ accountsPage:
   modal:
     password: Wachtwoord wijzigen
 appDetailPage:
-  header: "Toepassing: {appName}"
+  header: "Toepassing: AKE"
   endpoints:
     title: Eindpunten
     detail: 'Publieke eindpunten van deze toepassing'
@@ -373,8 +373,8 @@ authPage:
         labelText: UID veld
         display: "UID veld:"
       rancherApiHost:
-        labelText: "{appName} API Host"
-        display: "{appName} API Host:"
+        labelText: "AKE API Host"
+        display: "AKE API Host:"
       groups:
         labelText: Groepsveld
         display: "Groepsveld:"
@@ -411,7 +411,7 @@ authPage:
           text: Authenticatie
       disableAccess:
         header: "Gevarenzone&trade;"
-        warning: '<b class="text-danger">Opgelet:</b>Toegangsbeheer uitschakelen geeft volledige toegang tot {appName} aan iedereen die deze pagina kan bereiken of de API.'
+        warning: '<b class="text-danger">Opgelet:</b>Toegangsbeheer uitschakelen geeft volledige toegang tot AKE aan iedereen die deze pagina kan bereiken of de API.'
         disable: Toegangsbeheer uitschakelen
       groupsField: 'Groepen:'
       displayName: 'Weergavenaam:'
@@ -453,7 +453,7 @@ authPage:
           helpText: "Om de geconfigureerde GitHub applicatie te wijzigen, schakel de toegangscontrole hieronder uit en stel het vervolgens opnieuw in."
       disableAccess:
         header: "Gevarenzone&trade;"
-        warning: '<b class="text-danger">Opgelet:</b>Toegangsbeheer uitschakelen geeft volledige toegang tot {appName} aan iedereen die deze pagina kan bereiken of de API.'
+        warning: '<b class="text-danger">Opgelet:</b>Toegangsbeheer uitschakelen geeft volledige toegang tot AKE aan iedereen die deze pagina kan bereiken of de API.'
         disable: Github toegang uitschakelen
     notAuthenticated:
       header: "1. Een GitHub applicatie instellen"
@@ -469,7 +469,7 @@ authPage:
         li3:
           text: 'Klik op "Registreer applicatie"'
       form:
-        header: '2. Configureer {appName} om uw toepassing te gebruiken voor authenticatie'
+        header: '2. Configureer AKE om uw toepassing te gebruiken voor authenticatie'
         subtext: 'Kopieer en plak het Client ID en Client secret van uw nieuw aangemaakte applicatie.'
         clientId:
           labelText: Client ID
@@ -501,7 +501,7 @@ authPage:
         header: Algemeen
     configure:
       header: 'Azure AD account configureren'
-      replyUrl: "Azure AD vereist een whitelist URL voor uw {appName} server voordat u deze setup begint. Zorg ervoor dat de volgende URL is ingesteld in het Reply URL gedeelte van uw Azure Portal. Let op dat dit tot 5 minuten kan duren totdat de whitelist URL toegepast is."
+      replyUrl: "Azure AD vereist een whitelist URL voor uw AKE server voordat u deze setup begint. Zorg ervoor dat de volgende URL is ingesteld in het Reply URL gedeelte van uw Azure Portal. Let op dat dit tot 5 minuten kan duren totdat de whitelist URL toegepast is."
       help: Voer de Tenant ID, Client ID en Admin gebruikersgegevens in om verbinding te maken met uw Azure AD-auth account.
       applicationId:
         label: Applicatie ID
@@ -532,18 +532,18 @@ authPage:
       disabled: 'Lokale verificatie is niet geconfigureerd'
     subtext:
       enabled:
-        text: '{appName} is geconfigureerd om toegang tot accounts in de lokale database toe te staan.'
+        text: 'AKE is geconfigureerd om toegang tot accounts in de lokale database toe te staan.'
         alwaysOn: 'Lokale verificatie is altijd ingeschakeld, maar je kunt nog een extra verificatieschema selecteren.'
         linkText: Accounts beheren
-      disabled: '{appName} kan worden geconfigureerd om de toegang te beperken tot een reeks accounts die in de database {appName} is gedefinieerd. Dit is momenteel niet ingesteld, dus iedereen die deze pagina (of de API) bereikt, heeft volledige controle over het systeem.'
+      disabled: 'AKE kan worden geconfigureerd om de toegang te beperken tot een reeks accounts die in de database AKE is gedefinieerd. Dit is momenteel niet ingesteld, dus iedereen die deze pagina (of de API) bereikt, heeft volledige controle over het systeem.'
     accessEnabled:
       header: 'Gevarenzone&trade;'
-      warning: '<b class="text-danger">Opgelet:</b>Toegangsbeheer uitschakelen geeft volledige toegang tot {appName} aan iedereen die deze pagina kan bereiken of de API.'
+      warning: '<b class="text-danger">Opgelet:</b>Toegangsbeheer uitschakelen geeft volledige toegang tot AKE aan iedereen die deze pagina kan bereiken of de API.'
       buttonText:
         prompt: Toegangsbeheer uitschakelen
     accessDisabled:
       header: '1. Stel een beheerder in'
-      helpText: 'Deze gebruiker wordt beheerder met volledige controle over {appName}.'
+      helpText: 'Deze gebruiker wordt beheerder met volledige controle over AKE.'
       form:
         login:
           labelText: Login Gebruikersnaam
@@ -725,7 +725,7 @@ hostsPage:
         header:
           state: Status
 loginPage:
-  greeting: "Hallo!<br><span>Welkom bij {appName}</span>"
+  greeting: "Hallo!<br><span>Welkom bij AKE</span>"
   shibbolethError:
     401: "Ongeautoriseerd"
     500: "Interne Server Fout"
